@@ -1,0 +1,63 @@
+/*
+ * Hoja de estilos para personalizar los elementos
+ */
+
+body{
+    padding: 10%;
+}
+
+#KGB-LLL{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 20;  
+    background:color-primary-0;
+    height: auto; /*Junto a overflow: hidden; aplicará a nuestro elemento nav el mismo alto que el más alto de sus elementos hijos */ 
+    margin: 0 auto; /* Centro el contenedor */
+    overflow: hidden;
+}
+
+#KGB-LLL li a{
+    padding-left: 20%;
+    padding-right: 40%; /* El padding añadirá separación entre los elementos */
+}
+
+#KGB-LLL .navbar{
+    border-radius: 8px;
+}
+
+#Conocenos{
+margin-top:-5%;
+}
+
+#Miembros{
+padding:10px; 
+text-align:center;
+background:red;
+}
+#Miembros div{
+margin-top:10px;
+margin-bottom:10px;
+}
+
+#Miembros div div{
+padding:10px; 
+background:orange;
+color:orange;
+vertical-align:top;
+display: inline-block;
+height:120px;
+width:120px;
+}
+
+#Miembros div img,#Miembros div a {
+margin:0;
+height:100px;
+width:100px;
+vertical-align:middle;
+}
+
+#Miembros div:hover{
+color:#fff;
+}
