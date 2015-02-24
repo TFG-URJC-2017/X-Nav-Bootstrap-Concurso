@@ -39,7 +39,7 @@
                             <li class="idColaboraciones"><a href="#Colaboraciones">Colaboraciones</a></li>
                             <li class="idMiembros"><a href="#Miembros">El equipo</a></li>
                             <li class="idPremios"><a href="#Premios">Premios</a></li>
-                            <li class="idAsistida"><a style="color:#fff;" href="javascript:asistido()">Navegacion asistida</a></li>
+                            <li class="idAsistida"><a style="color:#fff;" href="javascript:asistido()" title="no implementada">Navegacion asistida</a></li>
                         </ul>
                     </div>
                 </div>
@@ -49,7 +49,8 @@
 </div>
 <!--CONÓCENOS
 ================================================== -->
-<div id="Conocenos" class="anitem">    
+<div id="Conocenos" class="anitem">
+    <a href="#Software" title="siguiente"></a>
     <div class="centrame">
         <hr style="margin:8px auto">
         <h2>CONÓCENOS</h2>
@@ -64,25 +65,29 @@
 <!--SOFTWARE
 ================================================== -->
 <div id="Software" class="anitem">
+    <a href="#Conocenos" title="anterior"></a>
+    <a href="#Proyectos" title="siguiente"></a>
     <div class="centrame">
         <hr style="margin:8px auto">
         <h2>SOFTWARE</h2>
         <hr style="margin:8px auto">
         <div class="text-left">
-            <p>Dr. Scratch (<a href="http://drscratch.programamos.es/">http://drscratch.programamos.es/</a>):<br>Es una plataforma web permite subir programas de Scratch, un lenguaje de programación visual orientado al aprendizaje de técnicas de programación para niños, para ser evaluados, de manera que el alumno recibirá realimentación sobre la calidad del programa, cómo mejorarlo y una evaluación global de sus capacidades de programación. La plataforma incluye técnicas de ludificación (gamification), de manera que el alumno puede ganar medallas y desarrollar sus habilidades de programación y alcanzar niveles de mayor complejidad y calidad. Dentro del proyecto se realizarán actividades específicamente orientadas al fomento de la programación para chicas, colectivos desfavorecidos y discapacitados.</p>
-            <p>LibreSoft Gymkhana (<a href="http://gymkhana.libresoft.es/">http://gymkhana.libresoft.es/</a>):<br> Es un juego educativo y geologalizado de codigo abierto para aprendizaje y aplicaciones de turismo. Esta basado en la aplicacion LibreGeoSocial mobile social network application,que incluye una interfaz de realidad aumentada. tu puedes controlar y organizar una gymkana mobil desde un movil Android(new generation gymkhanas) sin gran esfuerzo.</p>
+            <p>Dr. Scratch (<a href="http://drscratch.programamos.es/" title="pag web de dr. Scratch">http://drscratch.programamos.es/</a>):<br>Es una plataforma web permite subir programas de Scratch, un lenguaje de programación visual orientado al aprendizaje de técnicas de programación para niños, para ser evaluados, de manera que el alumno recibirá realimentación sobre la calidad del programa, cómo mejorarlo y una evaluación global de sus capacidades de programación. La plataforma incluye técnicas de ludificación (gamification), de manera que el alumno puede ganar medallas y desarrollar sus habilidades de programación y alcanzar niveles de mayor complejidad y calidad. Dentro del proyecto se realizarán actividades específicamente orientadas al fomento de la programación para chicas, colectivos desfavorecidos y discapacitados.</p>
+            <p>LibreSoft Gymkhana (<a href="http://gymkhana.libresoft.es/" title="web de gymkana">http://gymkhana.libresoft.es/</a>):<br> Es un juego educativo y geologalizado de codigo abierto para aprendizaje y aplicaciones de turismo. Esta basado en la aplicacion LibreGeoSocial mobile social network application,que incluye una interfaz de realidad aumentada. tu puedes controlar y organizar una gymkana mobil desde un movil Android(new generation gymkhanas) sin gran esfuerzo.</p>
         </div>
     </div>
 </div>
 <!--PROYECTOS
 ================================================== -->
-<div id="Proyectos" class="anitem">    
+<div id="Proyectos" class="anitem"> 
+    <a href="#Software" title="anterior"></a>
+    <a href="#Colaboraciones" title="siguiente"></a>   
     <div class="centrame">
         <hr style="margin:8px auto">
         <h2>PROYECTOS</h2>
         <hr style="margin:8px auto">
         <div class="text-left">
-            <p>e-Madrid (<a href="http://www.emadridnet.org">http://www.emadridnet.org</a>):<br>
+            <p>e-Madrid (<a href="http://www.emadridnet.org" title="web e-Madrid">http://www.emadridnet.org</a>):<br>
              Red de excelencia de la Comunidad de Madrid sobre Technology Enhanced Learning, compuesta por cinco universidades públicas de la Comunidad de Madrid y la UNED. Dentro del marco de eMadrid, se organiza un seminario mensual donde se presentan iniciativas relacionadas con el e-learning que tienen amplia difusión.</p>
 
             <p>FECyT: El objetivo principal de este proyecto es el despliegue y mantenimiento de una plataforma web, llamada Dr. Scratch, que fomente la creatividad, la capacidad tecnológica y de innovación de alumnos de primaria y secundaria. Esta plataforma web permite subir programas de Scratch, un lenguaje de programación visual orientado al aprendizaje de técnicas de programación para niños, para ser evaluados, de manera que el alumno recibirá realimentación sobre la calidad del programa, cómo mejorarlo y una evaluación global de sus capacidades de programación. La plataforma incluye técnicas de ludificación (gamification), de manera que el alumno puede ganar medallas y, si sigue las recomendaciones que se le van dando, desarrollar sus habilidades de programación y alcanzar niveles de mayor complejidad y de alta calidad. La plataforma permite ser usada sin crearse una cuenta, aunque si el alumno/profesor se crea una cuenta, tendrá disponible su historial, así como la posibilidad de interactuar con otros participantes.</p>
@@ -91,41 +96,43 @@
 </div>
 <!--COLABORACIONES
 ================================================== -->
-<div id="Colaboraciones" class="anitem">      
+<div id="Colaboraciones" class="anitem">  
+    <a href="#Proyectos" title="anterior"></a>
+    <a href="#Miembros" title="siguiente"></a>     
     <div class="centrame">  
         <hr style="margin:8px auto">
         <h2>COLABORACIONES</h2>
         <hr style="margin:8px auto">    
         <p class="text-left">Colaboramos con varias asociaciones y entidades. En particular con: </p>
-        <div class="row">            
+        <div id="Asociaciones" class="row">            
             <div id="CodeWeek" class="col-lg-2" onmouseover="textCodeWeek()" >
                 <div class="centrame">  
-                    <a href="javascript:textCodeWeek()">codeweek</a>
+                    <a href="javascript:textCodeWeek()" title="información semana de la programacion" >codeweek</a>
                  </div>
             </div>            
             <div id="ADIE" class="col-lg-2" onmouseover="textADIE()">
                 <div class="centrame"> 
-                    <a href="javascript:textADIE()">ADIE</a>
+                    <a href="javascript:textADIE()" title="información Asociación para el Desarrollo de la Informática">ADIE</a>
                 </div>
             </div>            
             <div id="UNIR" class="col-lg-2" onmouseover="textUNIR()">
                 <div class="centrame"> 
-                    <a href="javascript:textUNIR()">UNIR</a>
+                    <a href="javascript:textUNIR()" title="información Universidad Internacional de la Rioja">UNIR</a>
                 </div>
             </div>         
             <div id="Programamos" class="col-lg-2" onmouseover="textProgramamos()">
                 <div class="centrame"> 
-                    <a href="javascript:textProgramamos()">Programamos.es</a>
+                    <a href="javascript:textProgramamos()" title=" información programamos.es">Programamos.es</a>
                 </div>
             </div>            
             <div id="Dojo" class="col-lg-2" onmouseover="textDojo()">
                 <div class="centrame"> 
-                    <a href="javascript:textDojo()">Coder-Dojo</a>
+                    <a href="javascript:textDojo()" title="información Coder-Dojo Medialab Prado">Coder-Dojo</a>
                 </div>
             </div>
             <div id="INTEF" class="col-lg-2" onmouseover="textINTEF()">
                <div class="centrame">  
-                   <a href="javascript:textINTEF()">INTEF</a>
+                   <a href="javascript:textINTEF()" title="información Instituto Nacional de Tecnologías Educativas y de Formación del Profesorado">INTEF</a>
                </div>
            </div>            
        </div>
@@ -133,6 +140,8 @@
            <div id="textoCambiante" class="centrame">
                Coloca el raton sobre alguna de las asociaciones y entidades  (o activa el enlace) para conocerlas un poco.
            </div>
+           <a href="#Colaboraciones" title="descubrir otra colaboracion"></a>
+           <a href="#Asociaciones" title="directamente otra colaboracion"></a> 
        </div>            
     </div>
 </div>
@@ -140,18 +149,20 @@
 <!--MIEMBROS
 ================================================== -->
 <div id="Miembros" class="anitem">   
-    <div class="centrame">
-         <hr style="margin:8px auto">
+    <div class="centrame">        
+        <a href="#Colaboraciones" title="anterior"></a> 
+        <a href="#Premios" title="siguiente"></a>
+        <hr style="margin:8px auto">
         <h2>EL EQUIPO</h2>
         <hr style="margin:8px auto">
         <div class="row">
             <div class="col-lg-4">
                 <div class="media">
-                    <a class="pull-left" href = "https://github.com/gregoriorobles">
+                    <a class="pull-left" href = "https://github.com/gregoriorobles"         title="github de Gregorio Robles">
                         <img class="media-object dp img-circle"  src="img/Miembros/gregoriorobles.jpg" alt="Gregorio Robles">
                      </a>
                         <div class="media-body">
-                            <a class="media-heading" href = "https://github.com/gregoriorobles">
+                            <a class="media-heading" href = "https://github.com/gregoriorobles" title="github de Gregorio Robles">
                             <h4 >Gregorio Robles </h4></a> 
                             <hr style="margin:8px auto">                        
                             <h5>Profesor e investigador de la URJC</h5>
@@ -162,11 +173,11 @@
             </div>
             <div class="col-lg-4">
                 <div class="media">
-                    <a class="pull-left" href="https://github.com/jgbarah">
+                    <a class="pull-left" href="https://github.com/jgbarah" title="github de Jesús M. González Barahona">
                     <img class="media-object dp img-circle" src="img/Miembros/jesusgonzalez.jpg" alt="Jesús M. González Barahona">
                     </a>
                     <div class="media-body">
-                        <a class="media-heading" href="https://github.com/jgbarah">
+                        <a class="media-heading" href="https://github.com/jgbarah" title="github de Jesús M. González Barahona">
                         <h4>Jesús M. González Barahona</h4></a>
                         <hr style="margin:8px auto">  
                         <h5>Profesor e investigador de la URJC</h5>
@@ -176,11 +187,11 @@
             </div>
             <div class="col-lg-4">
                 <div class="media">
-                    <a class="pull-left" href="#">
+                    <a class="pull-left" href="#" title="github de Pedro de las Heras">
                     <img class="media-object dp img-circle" src="img/Miembros/pedrodelasheras.jpg" alt="Pedro de las Heras">
                     </a>
                     <div class="media-body">
-                        <a class="media-heading" href="#">
+                        <a class="media-heading" href="#" title="github de Pedro de las Heras">
                         <h4>Pedro de las Heras </h4></a>
                         <hr style="margin:8px auto">  
                         <h5>Profesor e investigador de la URJC</h5>
@@ -192,11 +203,11 @@
         <div class="row">
             <div class="col-lg-4">
                 <div class="media">
-                    <a class="pull-left" href = "#">
+                    <a class="pull-left" href = "#" title="github de Jose Centeno">
                     <img class="media-object dp img-circle"  src="img/Miembros/josecenteno.png" alt="Jose Centeno">
                     </a>
                     <div class="media-body">
-                        <a class="media-heading" href = "#">
+                        <a class="media-heading" href = "#" title="github de Jose Centeno">
                         <h4>Jose Centeno </h4></a>
                         <hr style="margin:8px auto">  
                         <h5>Profesor e investigador de la URJC</h5>
@@ -206,11 +217,11 @@
             </div>
             <div class="col-lg-4">
                 <div class="media">
-                    <a class="pull-left" href="#">
+                    <a class="pull-left" href="#" title="github de Eva Castro">
                     <img class="media-object dp img-circle" src="img/Miembros/evacastro.jpg" alt="Eva Castro">
                     </a>
                     <div class="media-body">
-                        <a class="media-heading" href="#">
+                        <a class="media-heading" href="#" title="github de Eva Castro">
                         <h4>Eva Castro </h4></a>
                         <hr style="margin:8px auto">  
                         <h5>Profesora e investigadora de la URJC</h5>
@@ -220,11 +231,11 @@
             </div>
             <div class="col-lg-4">
                 <div class="media">
-                    <a class="pull-left" href="#">
+                    <a class="pull-left" href="#" title="github de José Ignacio Huertas">
                     <img class="media-object dp img-circle" src="img/Miembros/joseignacio.jpg" alt="José Ignacio Huertas">
                     </a>
                     <div class="media-body">
-                        <a class="media-heading" href="#">
+                        <a class="media-heading" href="#" title="github de José Ignacio Huertas">
                         <h4>José Ignacio Huertas</h4></a>
                         <hr style="margin:8px auto">  
                         <h5>Doctorando en la URJC</h5>
@@ -237,11 +248,11 @@
         <div class="row">
             <div class="col-lg-4">
                 <div class="media">
-                    <a class="pull-left" href = "#">
+                    <a class="pull-left" href = "#" title="github de Jesús Moreno">
                     <img class="media-object dp img-circle"  src="img/Miembros/jesusmoreno.jpg" alt="Jesús Moreno">
                     </a>
                     <div class="media-body">
-                        <a class="media-heading" href = "#">
+                        <a class="media-heading" href = "#" title="github de Jesús Moreno">
                         <h4>Jesús Moreno </h4></a>
                         <hr style="margin:8px auto"> 
                         <h5>Doctorando en la URJC</h5>
@@ -252,11 +263,11 @@
             </div>
             <div class="col-lg-4">
                 <div class="media">
-                    <a class="pull-left" href="#">
+                    <a class="pull-left" href="#" title="github de Eva Hu Garres">
                     <img class="media-object dp img-circle" src="img/Miembros/evahu.jpg" alt="Eva Hu Garres" >
                     </a>
                     <div class="media-body">
-                        <a class="media-heading" href = "#">
+                        <a class="media-heading" href = "#" title="github de Eva Hu Garres">
                         <h4>Eva Hu Garres</h4></a>
                         <hr style="margin:8px auto"> 
                         <h5>Técnico de apoyo</h5>
@@ -266,11 +277,11 @@
             </div>
             <div class="col-lg-4">
                 <div class="media">
-                    <a class="pull-left" href="#">
+                    <a class="pull-left" href="#" title="github de Mari Luz Aguado">
                     <img class="media-object dp img-circle" src="img/Miembros/mariluz.jpg" alt="Mari Luz Aguado"/>
                     </a>
                     <div class="media-body">
-                        <a class="media-heading" href = "#">
+                        <a class="media-heading" href = "#" title="github de Mari Luz Aguado">
                         <h4 >Mari Luz Aguado</h4></a>
                         <hr style="margin:8px auto"> 
                         <h5>Técnico de apoyo</h5>
@@ -284,6 +295,8 @@
 <!--Premios
 ================================================== -->
 <div id="Premios" class="anitem">
+    <a href="#Miembros" title="anterior"></a>
+     <a href="#Conocenos" title="primero"></a> 
     <div class="centrame">
         <hr style="margin:8px auto">
         <h2>PREMIOS</h2>

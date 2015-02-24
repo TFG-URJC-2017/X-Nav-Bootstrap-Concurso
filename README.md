@@ -18,14 +18,25 @@ web resultante. El resultado no debería dar errores en <a href="http://blog.get
 ## Cosas que implementa.
 Para mejorar SEO:
 	un solo h1 en el documento
-Para mejorar la Accesibilidad:
+	mas texto que etiquetas
+	pocas imágenes y poco js para que la carga sea rápida
+
+Para mejorar la Accesibilidad
+	-Enlaces con title  para saber que  harán.
 	-fotos con etiqueta alt descriptiva, favorece a los lectores de pantalla.
 	-strong para poner énfasis negrita en vez de b.
-	-bloques de información con etiqueta para poder favorecer el salto.
 	-menú siempre en la misma posición.
-	-información de cada sección del tamaño de la pantalla. Para favorecer 	saltos.
+	-información de cada sección  ocupa una pantalla. 
+	-saltos facilitados por etiquetas a sin texto.
+	-navegación realizable sin ratón.
+	-Imágenes y texto para los enlaces.
+
 Adornitos:
-	-icono favicon  para distinguirlo de otras pestañas
+	-icono favicon  para distinguirlo de otras pestañas.
 
 Cosas a seguir mejorando:
 	-Recuperar comportamiento responsive 
+	-Implementar botón para navegación automática
+		Posibilidad de añadir archivo de audio para navegación narrada.
+		Fondos con mayor contraste.
+		Crear versión ligera de css y jss.

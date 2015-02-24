@@ -2,7 +2,7 @@ function  textCodeWeek(){
         $('#visor').css('background-color','#d0e2ec');
         $('#textoCambiante').css('color','#000');
         $('#textoCambiante').css('text-align','left');
-        $('#textoCambiante').empty().html('<p>Semana Europea de la programación (<a href="http://codeweek.eu/"> CodeWeek EU</a> ):</p><p>varios miembros del equipo son los embajadores españoles de esta iniciativa promovida por la Comisión Europea</p><p>encargándose, entre otras cuestiones, de la gestión y promoción de los diferentes acontecimientos y eventos que se van a celebrar en nuestro país.</p>');
+        $('#textoCambiante').empty().html('<p>Semana Europea de la programación (<a href="http://codeweek.eu/" title="pagina web codeweek"> CodeWeek EU</a> ):</p><p>varios miembros del equipo son los embajadores españoles de esta iniciativa promovida por la Comisión Europea</p><p>encargándose, entre otras cuestiones, de la gestión y promoción de los diferentes acontecimientos y eventos que se van a celebrar en nuestro país.');
 }
 function  textADIE(){      
         $('#visor').css('background-color','#fed88f');
@@ -36,6 +36,6 @@ function  textINTEF(){
 }
 
 function asistido(){
-    var elem = $(".anitem");
+    var elem = $("#Conocenos");
     elem.scrollTop = elem.scrollHeight;
 };
