@@ -2,62 +2,221 @@
  * Hoja de estilos para personalizar los elementos
  */
 
-body{
-    padding: 10%;
+html,body {margin:0px; height:100%; color:#000}
+
+h1,h2
+{
+    text-align:center;
+    font:7 Bodoni;
+    color: #000;
+    
+}
+.reborde{
+    width: 300px;
+    height:300px
+    color: #000;
+    text-shadow:
+    -1px -1px 0 #fff,
+    1px -1px 0 #fff,
+    -1px 1px 0 #fff,
+    1px 1px 0 #fff;
 }
 
+#Conocenos, #Software, #Proyectos, #Colaboraciones,  #Miembros, #Premios
+{
+    text-align:center;
+    padding-left: 8%;
+    padding-right: 8%;
+    background-size: 100% 100%,  auto, auto;
+    height:100%;
+    overflow: hidden;
+    background-size: 100% 100%,  auto, auto;
+    background-attachment: fixed;
+}
+
+.idConocenos, .idSoftware, .idProyectos, .idColaboraciones, .idMiembros, .idPremios
+{  
+    margin:1px;
+}
+
+.centrame
+{
+     position: relative;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);     
+} 
+.table
+{
+    /*
+    display: table;
+    border-spacing: 5px;
+    */
+    text-align:center;
+}
+.row
+{
+    min-height:1px;
+}
+ 
 #KGB-LLL{
     position: fixed;
     top: 0;
     right: 0;
     left: 0;
     z-index: 20;  
-    background:color-primary-0;
+    background:$color-primary-0;
     height: auto; /*Junto a overflow: hidden; aplicará a nuestro elemento nav el mismo alto que el más alto de sus elementos hijos */ 
     margin: 0 auto; /* Centro el contenedor */
     overflow: hidden;
 }
 
 #KGB-LLL li a{
-    padding-left: 20%;
-    padding-right: 40%; /* El padding añadirá separación entre los elementos */
+    padding-left: 24%;
+    padding-right: 23%; /* El padding añadirá separación entre los elementos */
+    color:#000;
+    link:#000;
 }
 
 #KGB-LLL .navbar{
     border-radius: 8px;
 }
 
+
 #Conocenos{
-margin-top:-5%;
+    background:#f4858e;
+    padding:5%;
+}
+.idConocenos
+{
+    background:#f4858e;
 }
 
-#Miembros{
-padding:10px; 
-text-align:center;
-background:red;
+#Software{
+    background:#d0e2ec;
 }
-#Miembros div{
-margin-top:10px;
-margin-bottom:10px;
+.idSoftware{
+    background:#d0e2ec;
 }
-
-#Miembros div div{
-padding:10px; 
-background:orange;
-color:orange;
-vertical-align:top;
-display: inline-block;
-height:120px;
-width:120px;
+#Software img
+{
+    margin-left:37%;
+    width: 300px;
+    height:300px
 }
-
-#Miembros div img,#Miembros div a {
-margin:0;
-height:100px;
-width:100px;
-vertical-align:middle;
+#Proyectos{
+    background:#a6daef;
+}
+.idProyectos{
+    background:#a6daef;
 }
 
-#Miembros div:hover{
-color:#fff;
+#Colaboraciones{
+    background:#fff;
+    padding-top:15px;
+}
+#Colaboraciones a{
+    color:#000;
+}
+.idColaboraciones{
+    background:#fff;
+}
+#Programamos, #Dojo, #INTEF, #CodeWeek, #ADIE, #UNIR{
+     display: table-cell;
+     height:40px
+}
+#Dojo{
+    background:#f4858e;    
+}
+#INTEF{
+    background: #bfe2ca;    
+}
+#CodeWeek{
+    background:#d0e2ec;
+}
+#ADIE{
+     background:  #fed88f;
+}
+#UNIR{
+     background:  #eee ;
+}
+#Programamos{
+    background:#a6daef;
+}
+#visor{
+background:black;
+height:300px;
+border-bottom-right-radius:8px;
+border-bottom-left-radius:8px; 
+padding:10%;
+}
+#visor a{
+color:#888;
+}
+#textoCambiante{
+color:white;
+}
+#Miembros
+{
+    text-align:left;
+    background:  #fed88f ;
+    display: inline-block;
+    vertical-align:middle;
+    padding-top:5px;
+} 
+.idMiembros
+{
+    background:  #fed88f;
+}
+
+#Miembros .media
+{
+    padding:10px;
+}
+#Miembros .dp
+{
+    border:10px solid orange;
+    transition: all 0.2s ease-in-out;
+}
+#Miembros .dp:hover
+{
+    transform: scale(1.2,1.2);
+}
+#Miembros img
+{
+    width: 100px;
+    height:100px
+}
+
+
+#Premios{
+    background: #bfe2ca;
+    padding-bottom:20%;
+}
+.idPremios{
+    background: #bfe2ca;
+}
+
+@-webkit-keyframes shake {
+    0% { -webkit-transform: translate(2px, 1px) rotate(0deg); }
+    10% { -webkit-transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { -webkit-transform: translate(-3px, 0px) rotate(1deg); }
+    30% { -webkit-transform: translate(0px, 2px) rotate(0deg); }
+    40% { -webkit-transform: translate(1px, -1px) rotate(1deg); }
+    50% { -webkit-transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { -webkit-transform: translate(-3px, 1px) rotate(0deg); }
+    70% { -webkit-transform: translate(2px, 1px) rotate(-1deg); }
+    80% { -webkit-transform: translate(-1px, -1px) rotate(1deg); }
+    90% { -webkit-transform: translate(2px, 2px) rotate(0deg); }
+    100% { -webkit-transform: translate(1px, -2px) rotate(-1deg); }
+}
+.icoshake:hover{
+    -webkit-animation-name: shake;
+    -webkit-animation-duration: 0.8s;
+    -webkit-transform-origin:50% 50%;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+}
+.icoshake {
+    display:inline-block
 }

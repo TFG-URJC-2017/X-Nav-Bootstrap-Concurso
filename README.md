@@ -1,4 +1,4 @@
-# X-Nav-Boostrap-Concurso
+﻿# X-Nav-Boostrap-Concurso
 Ejercicio 5.4.7 - Concurso: Tu diseño Bootstrap
 
 Ejercicio de las asignaturas AT y DAT. Tema Bootstrap.
@@ -15,3 +15,17 @@ Has de tener un repositorio llamado X-Nav-Bootstrap-Concurso en tu cuenta en Git
 que incluya elementos vía CDN, a ser posible, para que se pueda ver la 
 web resultante. El resultado no debería dar errores en <a href="http://blog.getbootstrap.com/2014/09/23/bootlint/">Bootlint</a>.
 
+## Cosas que implementa.
+Para mejorar SEO:
+	un solo h1 en el documento
+Para mejorar la Accesibilidad:
+	-fotos con etiqueta alt descriptiva, favorece a los lectores de pantalla.
+	-strong para poner énfasis negrita en vez de b.
+	-bloques de información con etiqueta para poder favorecer el salto.
+	-menú siempre en la misma posición.
+	-información de cada sección del tamaño de la pantalla. Para favorecer 	saltos.
+Adornitos:
+	-icono favicon  para distinguirlo de otras pestañas
+
+Cosas a seguir mejorando:
+	-Recuperar comportamiento responsive 
