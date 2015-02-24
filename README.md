@@ -40,3 +40,5 @@ Cosas a seguir mejorando:
 		Posibilidad de añadir archivo de audio para navegación narrada.
 		Fondos con mayor contraste.
 		Crear versión ligera de css y jss.
+      -Añadir Footer con la licencia y la imagen de la licencia.
+	-Añadir algunas fotos mas.
