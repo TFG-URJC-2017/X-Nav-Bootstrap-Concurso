@@ -35,7 +35,29 @@ function  textINTEF(){
         $('#textoCambiante').empty().html('<p>INTEF (<a href="http://www.ite.educacion.es/">Instituto Nacional de Tecnologías Educativas y de Formación del Profesorado</a>):</p><p>El equipo del proyecto cuenta con vínculos muy estrechos con el Instituto Nacional de Tecnologías Educativas y de Formación del Profesorado, dependiente del Ministerio de Educación, Cultura y Deporte. Así, uno de los miembros del equipo trabaja allí, mientras que cuatro de los miembros del mismo son profesores o tutores en cursos de formación en pensamiento computacional para profesores, incluyendo cursos de verano o cursos de formación on-line.</p>');
 }
 
-function asistido(){
-    var elem = $("#Conocenos");
-    elem.scrollTop = elem.scrollHeight;
-};
+
+$(document).ready(function(){
+    $("#drscratch").click(function(){
+        $("#drscratchPanel1").slideDown("slow");
+        $("#drscratchPanel2").slideUp("fast");
+        $("#gymkhanaPanel").slideUp("fast");
+        $("#gymkhana").slideUp("fast");
+    });
+    $("#drscratchPanel1").click(function(){
+        $("#drscratchPanel2").slideDown("slow");
+        $("#drscratchPanel1").slideUp("slow");
+    });
+    $("#drscratchPanel2").click(function(){
+        $("#drscratchPanel2").slideUp("slow");
+        $("#gymkhana").slideDown("fast");
+    });
+    $("#gymkhana").click(function(){
+        $("#gymkhanaPanel").slideDown("slow");
+         $("#drscratchPanel1").slideUp("fast");
+         $("#drscratchPanel2").slideUp("fast");
+         
+    });
+     $("#gymkhanaPanel").click(function(){
+         $("#gymkhanaPanel").slideUp("slow");
+     });
+});

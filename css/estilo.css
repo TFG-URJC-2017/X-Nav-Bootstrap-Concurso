@@ -2,13 +2,14 @@
  * Hoja de estilos para personalizar los elementos
  */
 
-html,body {margin:0px; height:100%; color:#000}
+html,body {margin:0px; height:100%;}
+*{color:#000}
+.navbar-nav > li > a {color:#000!important;}
 
 h1,h2
 {
     text-align:center;
-    font:7 Bodoni;
-    color: #000;
+    font:7 Bodoni;    
     
 }
 .reborde{
@@ -36,7 +37,7 @@ h1,h2
 
 .idConocenos, .idSoftware, .idProyectos, .idColaboraciones, .idMiembros, .idPremios
 {  
-    margin:1px;
+
 }
 
 .centrame
@@ -59,33 +60,25 @@ h1,h2
     min-height:1px;
 }
  
-#KGB-LLL{
+#KGB-L3{
     position: fixed;
     top: 0;
     right: 0;
     left: 0;
     z-index: 20;  
     background:$color-primary-0;
-    height: auto; /*Junto a overflow: hidden; aplicará a nuestro elemento nav el mismo alto que el más alto de sus elementos hijos */ 
-    margin: 0 auto; /* Centro el contenedor */
-    overflow: hidden;
-}
-
-#KGB-LLL li a{
-    padding-left: 24%;
-    padding-right: 23%; /* El padding añadirá separación entre los elementos */
-    color:#000;
-    link:#000;
 }
 
 #KGB-LLL .navbar{
-    border-radius: 8px;
+    border-radius: 10px!important;
 }
 
 
 #Conocenos{
     background:#f4858e;
-    padding:5%;
+    padding-top:5%;
+    padding-bottom:5%;
+    z-index: 1;
 }
 .idConocenos
 {
@@ -94,21 +87,35 @@ h1,h2
 
 #Software{
     background:#d0e2ec;
+    z-index: 2;
 }
 .idSoftware{
     background:#d0e2ec;
 }
-#Software img
-{
-    margin-left:37%;
-    width: 300px;
-    height:300px
+
+#drscratch, #drscratchPanel1, #drscratchPanel2{
+    background:#a6daef;
+    padding-top:10px;
+    padding-bottom:10px;
 }
+#gymkhana, #gymkhanaPanel{
+    background:#fff;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+#gymkhanaPanel, #drscratchPanel1, #drscratchPanel2{
+    padding-top:0px;
+    padding-bottom:0px;
+    display:none;
+}
+
 #Proyectos{
     background:#a6daef;
+    z-index: 3;
 }
 .idProyectos{
     background:#a6daef;
+    z-index: 1;
 }
 
 #Colaboraciones{
@@ -171,7 +178,7 @@ color:white;
 
 #Miembros .media
 {
-    padding:10px;
+    padding:9px;
 }
 #Miembros .dp
 {
@@ -197,25 +204,25 @@ color:white;
     background: #bfe2ca;
 }
 
-@-webkit-keyframes shake {
-    0% { -webkit-transform: translate(2px, 1px) rotate(0deg); }
-    10% { -webkit-transform: translate(-1px, -2px) rotate(-1deg); }
-    20% { -webkit-transform: translate(-3px, 0px) rotate(1deg); }
-    30% { -webkit-transform: translate(0px, 2px) rotate(0deg); }
-    40% { -webkit-transform: translate(1px, -1px) rotate(1deg); }
-    50% { -webkit-transform: translate(-1px, 2px) rotate(-1deg); }
-    60% { -webkit-transform: translate(-3px, 1px) rotate(0deg); }
-    70% { -webkit-transform: translate(2px, 1px) rotate(-1deg); }
-    80% { -webkit-transform: translate(-1px, -1px) rotate(1deg); }
-    90% { -webkit-transform: translate(2px, 2px) rotate(0deg); }
-    100% { -webkit-transform: translate(1px, -2px) rotate(-1deg); }
+@keyframes shake {
+    0% { transform: translate(2px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(0px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% {transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% {transform: translate(2px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(2px, 2px) rotate(0deg); }
+    100% {transform: translate(1px, -2px) rotate(-1deg); }
 }
 .icoshake:hover{
-    -webkit-animation-name: shake;
-    -webkit-animation-duration: 0.8s;
-    -webkit-transform-origin:50% 50%;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear;
+    animation-name: shake;
+    animation-duration: 0.8s;
+    transform-origin:50% 50%;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 .icoshake {
     display:inline-block

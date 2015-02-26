@@ -3,21 +3,20 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1">
     <title>KGB-LLL (KinderGarten Group and Beyond - LifeLong Learning)</title>
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">    
-    <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
     <!--PERSONALIZADO-->
     <link rel="stylesheet" href="css/estilo.css">
-   <!-- Link al favicon (es el personalizado) -->
+   <!-- Link al favicon-->
     <link type="image/png" href='img/500px-Scratchcat.svg.png' rel='icon' type='image/x-icon'/>
   </head>
-  <body class='loading' scroll='auto'>
+  <body  scroll='auto'>
 <!-- NAVBAR
 ================================================== -->
-<div id="KGB-LLL">
+<div id="KGB-L3">
     <div class="navbar-wrapper">
         <div class="container">
             <nav class="navbar navbar-inverse navbar-static-top">
@@ -29,7 +28,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         </button>       
-                        <a style="cursor:help" class="navbar-brand" href="README.md">KGB-LLL</a>
+                        <a style="cursor:help" class="navbar-brand" href="README.md">KGB-L3</a>
                     </div>
                     <div id="navbar" class="navbar-collapse collapse">
                         <ul class="nav navbar-nav">
@@ -39,7 +38,6 @@
                             <li class="idColaboraciones"><a href="#Colaboraciones">Colaboraciones</a></li>
                             <li class="idMiembros"><a href="#Miembros">El equipo</a></li>
                             <li class="idPremios"><a href="#Premios">Premios</a></li>
-                            <li class="idAsistida"><a style="color:#fff;" href="javascript:asistido()" title="no implementada">Navegacion asistida</a></li>
                         </ul>
                     </div>
                 </div>
@@ -49,22 +47,22 @@
 </div>
 <!--CONÓCENOS
 ================================================== -->
-<div id="Conocenos" class="anitem">
+<div id="Conocenos" class="anitem bgfondos">
     <a href="#Software" title="siguiente"></a>
     <div class="centrame">
         <hr style="margin:8px auto">
         <h2>CONÓCENOS</h2>
         <hr style="margin:8px auto">
-        <h1><strong>KGB L3<strong><small> (KinderGarten and Beyond and LifeLong Learning)</small></h1>
-        <br>
+        <h1><strong>KGB-LLL<strong><br><small> (KinderGarten and Beyond and LifeLong Learning)</small></h1>
+        
         <p>Somos un grupo de investigación de la URJC:<br>
         Cinco profesores, dos doctorandos y una docena de alumnos de máster y grado.</p> 
-        <p>KGB L3 es investigación y promoción del pensamiento computacional.</p>
+        <p><strong>KGB L3</strong> es investigación y promoción del pensamiento computacional.</p>
     </div>
 </div>
 <!--SOFTWARE
 ================================================== -->
-<div id="Software" class="anitem">
+<div id="Software" class="anitem bgfondos">
     <a href="#Conocenos" title="anterior"></a>
     <a href="#Proyectos" title="siguiente"></a>
     <div class="centrame">
@@ -72,14 +70,31 @@
         <h2>SOFTWARE</h2>
         <hr style="margin:8px auto">
         <div class="text-left">
-            <p>Dr. Scratch (<a href="http://drscratch.programamos.es/" title="pag web de dr. Scratch">http://drscratch.programamos.es/</a>):<br>Es una plataforma web permite subir programas de Scratch, un lenguaje de programación visual orientado al aprendizaje de técnicas de programación para niños, para ser evaluados, de manera que el alumno recibirá realimentación sobre la calidad del programa, cómo mejorarlo y una evaluación global de sus capacidades de programación. La plataforma incluye técnicas de ludificación (gamification), de manera que el alumno puede ganar medallas y desarrollar sus habilidades de programación y alcanzar niveles de mayor complejidad y calidad. Dentro del proyecto se realizarán actividades específicamente orientadas al fomento de la programación para chicas, colectivos desfavorecidos y discapacitados.</p>
-            <p>LibreSoft Gymkhana (<a href="http://gymkhana.libresoft.es/" title="web de gymkana">http://gymkhana.libresoft.es/</a>):<br> Es un juego educativo y geologalizado de codigo abierto para aprendizaje y aplicaciones de turismo. Esta basado en la aplicacion LibreGeoSocial mobile social network application,que incluye una interfaz de realidad aumentada. tu puedes controlar y organizar una gymkana mobil desde un movil Android(new generation gymkhanas) sin gran esfuerzo.</p>
+            <div  id="drscratch" class="col-lg-6">
+                Dr. Scratch (<a href="http://drscratch.programamos.es/" title="pag web de dr. Scratch">http://drscratch.programamos.es/</a>):
+            </div> 
+            <div  id="gymkhana" class="col-lg-6">
+                LibreSoft Gymkhana (<a href="http://gymkhana.libresoft.es/" title="web de gymkana">http://gymkhana.libresoft.es/</a>):
+            </div>    
+            <div id="drscratchPanel1" class="col-lg-12">
+                <p>Es una plataforma web permite subir programas de Scratch, un lenguaje de programación visual orientado al aprendizaje de técnicas de programación para niños, para ser evaluados, de manera que el alumno recibirá realimentación sobre la calidad del programa, cómo mejorarlo y una evaluación global de sus capacidades de programación.</p> 
+                <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>[1|2]
+            </div>
+            <div id="drscratchPanel2" class="col-lg-12">    
+                La plataforma incluye técnicas de ludificación (gamification), de manera que el alumno puede ganar medallas y desarrollar sus habilidades de programación y alcanzar niveles de mayor complejidad y calidad. Dentro del proyecto se realizarán actividades específicamente orientadas al fomento de la programación para chicas, colectivos desfavorecidos y discapacitados.</p>
+                <span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>[2|2]
+            </div>
+           
+            <div id="gymkhanaPanel" class="col-lg-12">
+                 <p>Es un juego educativo y geologalizado de codigo abierto para aprendizaje y aplicaciones de turismo. Esta basado en la aplicacion LibreGeoSocial mobile social network application,que incluye una interfaz de realidad aumentada. tu puedes controlar y organizar una gymkana mobil desde un movil Android(new generation gymkhanas) sin gran esfuerzo.</p>
+                 <span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>
+             </div>
         </div>
     </div>
 </div>
 <!--PROYECTOS
 ================================================== -->
-<div id="Proyectos" class="anitem"> 
+<div id="Proyectos" class="anitem bgfondos"> 
     <a href="#Software" title="anterior"></a>
     <a href="#Colaboraciones" title="siguiente"></a>   
     <div class="centrame">
@@ -96,7 +111,7 @@
 </div>
 <!--COLABORACIONES
 ================================================== -->
-<div id="Colaboraciones" class="anitem">  
+<div id="Colaboraciones" class="anitem bgfondos">  
     <a href="#Proyectos" title="anterior"></a>
     <a href="#Miembros" title="siguiente"></a>     
     <div class="centrame">  
@@ -148,7 +163,7 @@
 
 <!--MIEMBROS
 ================================================== -->
-<div id="Miembros" class="anitem">   
+<div id="Miembros" class="anitem bgfondos">   
     <div class="centrame">        
         <a href="#Colaboraciones" title="anterior"></a> 
         <a href="#Premios" title="siguiente"></a>
@@ -163,10 +178,10 @@
                      </a>
                         <div class="media-body">
                             <a class="media-heading" href = "https://github.com/gregoriorobles" title="github de Gregorio Robles">
-                            <h4 >Gregorio Robles </h4></a> 
+                            <h3 >Gregorio Robles </h3></a> 
                             <hr style="margin:8px auto">                        
-                            <h5>Profesor e investigador de la URJC</h5>
-                            <h5><small> Director del grupo </small></h5>
+                            <h4>Profesor e investigador de la URJC</h4>
+                            <h4><small> Director del grupo </small></h4>
                             <hr style="margin:8px auto">
                         </div>
                 </div>
@@ -178,9 +193,9 @@
                     </a>
                     <div class="media-body">
                         <a class="media-heading" href="https://github.com/jgbarah" title="github de Jesús M. González Barahona">
-                        <h4>Jesús M. González Barahona</h4></a>
+                        <h3>Jesús M. González Barahona</h3></a>
                         <hr style="margin:8px auto">  
-                        <h5>Profesor e investigador de la URJC</h5>
+                        <h4>Profesor e investigador de la URJC</h4>
                         <hr style="margin:8px auto">
                     </div>
                 </div>
@@ -192,9 +207,9 @@
                     </a>
                     <div class="media-body">
                         <a class="media-heading" href="#" title="github de Pedro de las Heras">
-                        <h4>Pedro de las Heras </h4></a>
+                        <h3>Pedro de las Heras </h3></a>
                         <hr style="margin:8px auto">  
-                        <h5>Profesor e investigador de la URJC</h5>
+                        <h4>Profesor e investigador de la URJC</h4>
                         <hr style="margin:8px auto">
                     </div>
                 </div>
@@ -208,9 +223,9 @@
                     </a>
                     <div class="media-body">
                         <a class="media-heading" href = "#" title="github de Jose Centeno">
-                        <h4>Jose Centeno </h4></a>
+                        <h3>Jose Centeno </h3></a>
                         <hr style="margin:8px auto">  
-                        <h5>Profesor e investigador de la URJC</h5>
+                        <h4>Profesor e investigador de la URJC</h4>
                         <hr style="margin:8px auto">
                     </div>
                 </div>
@@ -222,9 +237,9 @@
                     </a>
                     <div class="media-body">
                         <a class="media-heading" href="#" title="github de Eva Castro">
-                        <h4>Eva Castro </h4></a>
+                        <h3>Eva Castro </h3></a>
                         <hr style="margin:8px auto">  
-                        <h5>Profesora e investigadora de la URJC</h5>
+                        <h4>Profesora e investigadora de la URJC</h4>
                         <hr style="margin:8px auto">
                     </div>
                 </div>
@@ -236,10 +251,10 @@
                     </a>
                     <div class="media-body">
                         <a class="media-heading" href="#" title="github de José Ignacio Huertas">
-                        <h4>José Ignacio Huertas</h4></a>
+                        <h3>José Ignacio Huertas</h3></a>
                         <hr style="margin:8px auto">  
-                        <h5>Doctorando en la URJC</h5>
-                        <h5><small>Cofundador de programamos.es Profesor de Secundaria</small></h5>
+                        <h4>Doctorando en la URJC</h4>
+                        <h4><small>Cofundador de programamos.es Profesor de Secundaria</small></h4>
                         <hr style="margin:8px auto">
                     </div>
                 </div>
@@ -253,10 +268,10 @@
                     </a>
                     <div class="media-body">
                         <a class="media-heading" href = "#" title="github de Jesús Moreno">
-                        <h4>Jesús Moreno </h4></a>
+                        <h3>Jesús Moreno </h3></a>
                         <hr style="margin:8px auto"> 
-                        <h5>Doctorando en la URJC</h5>
-                        <h5><small>Cofundador de programamos.es y Profesor de Secundaria </small></h5>
+                        <h4>Doctorando en la URJC</h4>
+                        <h4><small>Cofundador de programamos.es y Profesor de Secundaria </small></h4>
                         <hr style="margin:8px auto">
                     </div>
                 </div>
@@ -268,9 +283,9 @@
                     </a>
                     <div class="media-body">
                         <a class="media-heading" href = "#" title="github de Eva Hu Garres">
-                        <h4>Eva Hu Garres</h4></a>
+                        <h3>Eva Hu Garres</h3></a>
                         <hr style="margin:8px auto"> 
-                        <h5>Técnico de apoyo</h5>
+                        <h4>Técnico de apoyo</h4>
                         <hr style="margin:8px auto">
                     </div>
                 </div>
@@ -282,9 +297,9 @@
                     </a>
                     <div class="media-body">
                         <a class="media-heading" href = "#" title="github de Mari Luz Aguado">
-                        <h4 >Mari Luz Aguado</h4></a>
+                        <h3 >Mari Luz Aguado</h3></a>
                         <hr style="margin:8px auto"> 
-                        <h5>Técnico de apoyo</h5>
+                        <h4>Técnico de apoyo</h4>
                         <hr style="margin:8px auto">
                     </div>
                 </div>
@@ -294,7 +309,7 @@
 </div>
 <!--Premios
 ================================================== -->
-<div id="Premios" class="anitem">
+<div id="Premios" class="anitem bgfondos">
     <a href="#Miembros" title="anterior"></a>
      <a href="#Conocenos" title="primero"></a> 
     <div class="centrame">
@@ -314,7 +329,6 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="http://code.jquery.com/jquery.min.js"></script>
     <script src="js/mijavascript.js"></script>
-    <script src='http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js'/>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
   </body>
 </html>
