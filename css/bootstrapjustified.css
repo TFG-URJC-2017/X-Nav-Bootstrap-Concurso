@@ -11,12 +11,16 @@
       background: red;
  }
  
-.nav-justified > li > a {
-color: #000 !important;    
+.nav > li > a {
+color: #000 !important;  
+
 padding-top: 15px;
 padding-bottom: 15px;
 margin-bottom: 0;
 text-align: center;
+}
+.nav > li > a:hover {
+    background-color:rgba(88, 88, 88, 0.2);
 }
 .nav-justified > li:first-child > a {
 border-radius: 5px 5px 0 0;

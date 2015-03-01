@@ -3,14 +3,24 @@
  */
 
 html,body {margin:0px; height:100%;}
-*{color:black}
+*{color:black
+  font-family: serif;  
+}
 
 a{color: blue;}
 h1 .small, h1 small, h4 .small, h4 small{color:black;}
 
 h1,h2
-{
-    text-align:center;   
+{    
+    text-align:center;  
+    font-family: Open Sans; font-size: 26px; font-style: normal; font-variant: normal; font-weight: 500; line-height: 30.4px;
+}
+h2,h3{
+    color:black;
+    
+}
+h3{
+    font-family: Open Sans; font-size: 18px; font-style: normal; font-variant: normal; 
 }
 .reborde{
     width: 300px;
@@ -31,17 +41,13 @@ h1,h2
     background-size: 100% 100%,  auto, auto;
     height:100%;
     overflow: hidden;
-    background-size: 100% 100%,  auto, auto;
-    background-attachment: fixed;
 }
-
-
 .centrame
 {
      position: relative;
      top: 50%;
      left: 50%;
-     transform: translate(-50%, -50%);     
+     transform: translate(-50%, -50%);   
 } 
 .table
 {
@@ -56,9 +62,6 @@ h1,h2
     min-height:1px;
 }
  
-
-
-
 #Conocenos{
     background:#f4858e;
     padding-top:5%;
@@ -69,7 +72,6 @@ h1,h2
 {
     background:#f4858e;
 }
-
 #Software, #idSoftware{
     background:#e8e3f0;
     z-index: 2;
@@ -81,6 +83,9 @@ h1,h2
     background:#bfe2ca;
     padding-top:10px;
     padding-bottom:10px;
+}
+#gymkhana, #e-Madrid,#drscratch,#FECyT{
+    text-align:center;
 }
 #gymkhana, #gymkhanaPanel, #e-Madrid, #e-MadridPanel {
     background:  #fed88f;
@@ -100,18 +105,19 @@ h1,h2
     z-index: 3;
 }
 
-
 #Colaboraciones{
-    background:#fff;
     padding-top:15px;
 }
 
-#idColaboraciones{
+#Colaboraciones,#idColaboraciones{
     background:#fff;
 }
-#Programamos, #Dojo, #INTEF, #CodeWeek, #ADIE, #UNIR{
+#Programamos, #Dojo, #INTEF, #CodeWeek, #ADIE, #UNIR,#mas{
      display: table-cell;
      height:40px
+}
+#Programamos a, #Dojo a, #INTEF a, #CodeWeek a, #ADIE a, #UNIR a{
+    color:black;
 }
 #Dojo{
     background:#f4858e;    
@@ -131,22 +137,20 @@ h1,h2
 #Programamos{
     background:#a6daef;
 }
-#visor{
-background:black;
-height:300px;
-border-bottom-right-radius:8px;
-border-bottom-left-radius:8px; 
-padding:10%;
+#mas{
+    background:black;   
 }
-#mensaje,#mensaje1{
-
-background:black;
-height:60px;
-border-bottom-right-radius:8px;
-border-bottom-left-radius:8px;
-text-align:center;
+#mas a{
+    color:white;
 }
-#mensaje p, #mensaje1 p{
+.mensaje{
+    background:black;
+    height:60px;
+    border-bottom-right-radius:8px;
+    border-bottom-left-radius:8px;
+    text-align:center;
+}
+.mensaje p{
     color:white;
 }
 
@@ -156,12 +160,11 @@ color:white;
 #Miembros
 {
     text-align:left;
-    background:  #fed88f ;
     display: inline-block;
     vertical-align:middle;
     padding-top:5px;
 } 
-#idMiembros
+#Miembros,#idMiembros
 {
     background:  #fed88f;
 }
@@ -187,10 +190,9 @@ color:white;
 
 
 #Premios{
-    background: #bfe2ca;
-    padding-bottom:20%;
+        padding-bottom:20%;
 }
-#idPremios{
+#Premios, #idPremios{
     background: #bfe2ca;
 }
 
@@ -217,3 +219,5 @@ color:white;
 .icoshake {
     display:inline-block
 }
+
+

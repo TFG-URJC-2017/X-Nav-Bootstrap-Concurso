@@ -14,8 +14,10 @@
      <link rel="stylesheet" href="css/estilo.css">
    <!-- Link al favicon-->
     <link type="image/png" href='img/500px-Scratchcat.svg.png' rel='icon' type='image/x-icon'/>
+    <!--Font-->
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
   </head>
-  <body  scroll='auto'>
+  <body>
 <!-- NAVBAR
 ================================================== -->
     <div class="navbar-wrapper">
@@ -54,10 +56,8 @@
         <h2>CONÓCENOS</h2>
         <hr style="margin:8px auto">
         <h1><strong>KGB-LLL<strong><br><small>(KinderGarten and Beyond and LifeLong Learning)</small></h1>
-        <noscript>visita la pagina con un buscador que soporte JavaScript</noscript>       
-        <p>Somos un grupo de investigación de la URJC:<br>
-        Cinco profesores, dos doctorandos y una docena de alumnos de máster y grado.</p> 
-        <p><strong>KGB L3</strong> es investigación y promoción del pensamiento computacional.</p>
+        <noscript>visita la pagina con un navegador que soporte JavaScript</noscript>       
+        <h3>¡KGB L3 es investigación y promoción del pensamiento computacional!</h3>
     </div>
 </div>
 <!--SOFTWARE
@@ -70,13 +70,13 @@
         <h2>SOFTWARE</h2>
         <hr style="margin:8px auto">
         <div class="text-left">
-            <div  id="drscratch" class="col-lg-6">
+           <div  id="drscratch" class="col-lg-6">
                <span id="arriba1"><span  class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span></span> Dr. Scratch <a href="http://drscratch.programamos.es/" title="pag web de dr. Scratch">[web]</a>
             </div> 
             <div  id="gymkhana" class="col-lg-6">
                 <span id="arriba2"><span  class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span></span> LibreSoft Gymkhana <a href="http://gymkhana.libresoft.es/" title="web de gymkana">[web]</a>
             </div> 
-            <div  id="mensaje" class="col-lg-12">  
+            <div id="mensaje" class="col-lg-12 mensaje">  
                 <p class="centrame">
                      Activa las pestañas para conocerlos un poco.
                 </p>
@@ -88,8 +88,7 @@
             <div id="drscratchPanel2" class="col-lg-12">    
                 <p>La plataforma incluye técnicas de ludificación (gamification), de manera que el alumno puede ganar medallas y desarrollar sus habilidades de programación y alcanzar niveles de mayor complejidad y calidad. Dentro del proyecto se realizarán actividades específicamente orientadas al fomento de la programación para chicas, colectivos desfavorecidos y discapacitados.</p>
                 <span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>[2|2]
-            </div>
-           
+            </div>           
             <div id="gymkhanaPanel" class="col-lg-12">
                  <p>gymkhana: Es un juego educativo y geologalizado de codigo abierto para aprendizaje y aplicaciones de turismo. Esta basado en la aplicacion LibreGeoSocial mobile social network application,que incluye una interfaz de realidad aumentada.Se puede controlar y organizar una gymkana desde un movil Android(new generation gymkhanas) sin gran esfuerzo.</p>
                  <span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>
@@ -113,7 +112,7 @@
             <div  id="FECyT" class="col-lg-6">
                <span id="arriba4"><span  class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span></span> FECyT 
             </div> 
-            <div  id="mensaje1" class="col-lg-12">  
+            <div id="mensaje1" class="col-lg-12 mensaje">  
                 <p class="centrame">
                     Activa las pestañas para conocerlos un poco.
                 </p>
@@ -152,7 +151,7 @@
         <hr style="margin:8px auto">
         <h2>COLABORACIONES</h2>
         <hr style="margin:8px auto">    
-        <p class="text-left">Colaboramos con varias asociaciones y entidades. En particular con: </p>
+        <p class="text-left">Algunas de nuestras colaboraciones: </p>
         <div id="Asociaciones" class="row">            
             <div id="CodeWeek" class="col-lg-2 col-xs-4">
                 <div class="centrame">  
@@ -183,15 +182,42 @@
                <div class="centrame">  
                    <a href="javascript:textINTEF()" title="información Instituto Nacional de Tecnologías Educativas y de Formación del Profesorado">INTEF</a>
                </div>
-           </div>            
+           </div>   
+          <div id="mas" class="visible-xs col-xs-8">
+               <div class="centrame">  
+                   <a href="javascript:mas()" title="desplegable de las demas pestañas">+</a>
+               </div>
+           </div>   
        </div>
-       <div id="visor" class="row">
-           <div id="textoCambiante" class="centrame">
-               Coloca el raton sobre alguna de las asociaciones y entidades  (o activa el enlace) para conocerlas un poco.
-           </div>
-           <a href="#Colaboraciones" title="descubrir otra colaboracion"></a>
-           <a href="#Asociaciones" title="directamente otra colaboracion"></a> 
-       </div>            
+       <div id="mensaje2" class="row mensaje">
+           <p class="centrame">
+                  Activa las pestañas para conocerlas un poco. 
+           </p>           
+       </div>  
+       <div id="CodeWeekPanel" class="col-lg-12">
+            <p>CodeWeek: Semana Europea de la programación<a href="http://codeweek.eu/" title="pagina web codeweek"> [web]</a>: <br>Somos los embajadores españoles de esta iniciativa de la Comisión Europea<br>encargándonos, de la gestión y promoción de los diferentes acontecimientos y eventos que se van a celebrar en nuestro país.</p>
+            <span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>
+        </div>  
+        <div id="ADIEPanel" class="col-lg-12">
+            <p>ADIE: Asociación para el Desarrollo de la Informática Educativa <a href="http://www.adie.es">[web]</a>:<br>Cuyos objetivos son:<br> 1.Fomentar la Informática Educativa <br>2.La formación de las personas en las Nuevas Tecnologías Educativas<br> 3.El intercambio de trabajos, ideas y experiencias<br>4.Evaluar la calidad pedagógica de los productos existentes.</p>
+            <span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>
+        </div>
+        <div id="ProgramamosPanel" class="col-lg-12">
+            <p>Programamos.es: <a href="http://www.programamos.es">[web]</a>:<br> Promotores y directores de esta asociación, que pretende crear una comunidad de docentes interesados en aprender y enseñar a programar de manera divertida. Constituida en 2013, realizan actividades y talleres para dar difusión de este movimiento e involucrar en el mismo a estudiantes, docentes, familias y administraciones educativas.</p>
+            <span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>
+        </div>
+        <div id="UNIRPanel" class="col-lg-12">
+            <p>UNIR: Universidad Internacional de la Rioja<a href="http://www.unir.net">[web]</a>:<br>Una universidad virtual que oferta el Máster en e-learning y redes sociales, orientado a docentes principalmente de las etapas infantil, primaria y secundaria. Asimismo, han ofrecido varios talleres abiertos al público sobre programación en Scratch.</p>
+            <span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>
+        </div>
+        <div id="Coder-DojoPanel" class="col-lg-12">
+            <p>Coder-Dojo Medialab Prado:<a href="http://medialab-prado.es/article/coderdojo">[web]</a>:<br>Iniciativa internacional surgida en 2011 en Irlanda, con el objetivo de enseñar a niños y jóvenes a programar. Ahora mismo coderDojo es una red de centros. En la actualidad existen decenas de clubs en más de de 20 países. En CoderDojo se potencia el software libre y se trabaja con herramientas de programación libres. Algunas de las cosas que se suelen aprender son: Scratch, HTML, Javascript, Arduino, Processing, Android.</p>
+            <span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>
+        </div>
+        <div id="INTEFPanel" class="col-lg-12">
+            <p>INTEF:Instituto Nacional de Tecnologías Educativas y de Formación del Profesorado<a href="http://www.ite.educacion.es/">[web]</a>:<br>Dependiente del Ministerio de Educación, Cultura y Deporte. Entre nuestras aportaciones estan: impartir cursos de formación en pensamiento computacional para profesores, cursos de verano o cursos de formación on-line.</p>
+            <span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>
+        </div>
     </div>
 </div>
 
@@ -204,6 +230,8 @@
         <hr style="margin:8px auto">
         <h2>EL EQUIPO</h2>
         <hr style="margin:8px auto">
+        <p>Somos un grupo de investigación de la URJC:<br>
+        Cinco profesores, dos doctorandos y una docena de alumnos de máster y grado.</p> 
         <div class="row">
             <div class="col-lg-4">
                 <div class="media">

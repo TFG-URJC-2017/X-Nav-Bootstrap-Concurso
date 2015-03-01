@@ -30,15 +30,17 @@ Para mejorar la Accesibilidad
 	-saltos facilitados por etiquetas a sin texto.
 	-navegación realizable sin ratón.
 	-Imágenes y texto para los enlaces.
+	-distancia mínima de contraste 3:1
+	-
 
 Adornitos:
 	-icono favicon  para distinguirlo de otras pestañas.
+
 
 Cosas a seguir mejorando:
 	-Recuperar comportamiento responsive 
 	-Implementar botón para navegación automática
 		Posibilidad de añadir archivo de audio para navegación narrada.
-		Fondos con mayor contraste.
 		Crear versión ligera de css y jss.
       -Añadir Footer con la licencia y la imagen de la licencia.
 	-Añadir algunas fotos mas.
