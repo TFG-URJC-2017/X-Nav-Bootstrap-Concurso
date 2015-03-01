@@ -1,42 +1,14 @@
 
-function  textCodeWeek(){      
-        $("#CodeWeekPanel").slideToggle("slow");        
-        if ($( window ).width() < 600){
-            $("#mas").slideDown("fast");
-            $("#ADIE").slideUp("fast");
-            $("#Programamos").slideUp("fast");
-            $("#UNIR").slideUp("fast");
-            $("#Dojo").slideUp("fast");
-            $("#Dojo").slideUp("fast");
-        }
-        if (close1)  
-            $("#arriba3").empty().html( '<span  class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span>'); 
-        else
-            $("#arriba3").empty().html('<span  class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>');
-        $("#arriba4").empty().html('<span  class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>');
-        close1=!close1;
-        panelnumber1=0;
-}
-function  textADIE(){      
-       
-}
-function  textProgramamos(){      
-       
-}
-function  textUNIR(){      
-       
-}
-function  textDojo(){      
-
-}
-function  textINTEF(){      
-   
-}
-
 var panelnumber=0;
 var panelnumber1=0;
 var close=true;
 var close1=true;
+var close2=true;
+var close3=true;
+var close4=true;
+var close5=true;
+var close6=true;
+var close7=true;
 var avisovisible=true;
 function textdrscratch(){
     $("#gymkhanaPanel").slideUp("fast");
@@ -60,12 +32,11 @@ function textdrscratch(){
         $("#mensaje").slideDown("fast");
         panelnumber=0;
     }
-    return false;
 }
 function textFECyT(){
     $("#e-MadridPanel").slideUp("fast");
     if (panelnumber1===0){
-        $("#arriba3").empty().html('<span  class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>');
+        $("#arriba4").empty().html('<span  class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>');
         $("#arriba4").empty().html( '<span  class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span>');
         $("#FECyTPanel1").slideDown("slow");
         $("#FECyTPanel2").slideUp("fast");
@@ -90,7 +61,124 @@ function textFECyT(){
         $("#mensaje1").slideDown("fast");
         panelnumber1=0;
     }
-    return false;
+}
+function cerrarall(){
+    $("#mas").slideDown("fast");
+    $("#ADIE").hide();
+    $("#CodeWeek").hide();
+    $("#Programamos").hide();
+    $("#UNIR").hide();
+    $("#Dojo").hide();
+    $("#INTEF").hide(); 
+    $("#ADIEPanel").hide();
+    $("#CodeWeekPanel").hide();
+    $("#ProgramamosPanel").hide();
+    $("#UNIRPanel").hide();
+    $("#DojoPanel").hide();
+    $("#INTEFPanel").hide();    
+}
+
+function closetrue(){
+    var close2=true;
+    var close3=true;
+    var close4=true;
+    var close5=true;
+    var close6=true;
+    var close7=true;
+}    
+function  textCodeWeek(){    
+        if ($( window ).width() < 600){            
+                cerrarall();
+                $("#CodeWeek").show();               
+        }
+        $("#CodeWeekPanel").slideToggle("slow");     
+        if (close2)  
+            $("#arriba5").empty().html( '<span  class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span>'); 
+        else
+            $("#arriba5").empty().html('<span  class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>');
+        var salve=!close2;
+        closetrue();
+        close2=salve;
+}
+function  textADIE(){      
+       $("#ADIEPanel").slideToggle("slow");        
+                if ($( window ).width() < 600){            
+            cerrarall();
+            $("#ADIE").show();
+        }
+        if (close3)  
+            $("#arriba6").empty().html( '<span  class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span>'); 
+        else
+            $("#arriba6").empty().html('<span  class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>');
+        var salve=!close3;
+        closetrue();
+        close3=salve;
+}
+function  textUNIR(){      
+       $("#UNIRPanel").slideToggle("slow");        
+                if ($( window ).width() < 600){            
+            cerrarall();
+            $("#UNIR").show();
+        }
+        if (close4)  
+            $("#arriba7").empty().html( '<span  class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span>'); 
+        else
+            $("#arriba7").empty().html('<span  class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>');
+        var salve=!close4;
+        closetrue();
+        close4=salve;
+}
+function  textProgramamos(){      
+       $("#ProgramamosPanel").slideToggle("slow");        
+                if ($( window ).width() < 600){            
+            cerrarall();
+            $("#Programamos").show();
+        }
+        if (close5)  
+            $("#arriba8").empty().html( '<span  class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span>'); 
+        else
+            $("#arriba8").empty().html('<span  class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>');
+        var salve=!close5;
+        closetrue();
+        close5=salve;
+}
+function  textDojo(){      
+       $("#DojoPanel").slideToggle("slow");        
+                if ($( window ).width() < 600){            
+            cerrarall();
+            $("#Dojo").show();
+        }
+        if (close6)  
+            $("#arriba9").empty().html( '<span  class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span>'); 
+        else
+            $("#arriba9").empty().html('<span  class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>');
+        var salve=!close6;
+        closetrue();
+        close6=salve;
+}
+function  textINTEF(){      
+       $("#INTEFPanel").slideToggle("slow");        
+                if ($( window ).width() < 600){            
+            cerrarall();
+            $("#INTEF").show();
+        }
+        if (close7)  
+            $("#arriba10").empty().html( '<span  class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span>'); 
+        else
+            $("#arriba10").empty().html('<span  class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>');
+        var salve=!close7;
+        closetrue();
+        close7=salve;
+}
+function textmas(){
+    cerrarall();
+    $("#mas").slideUp("fast");
+    $("#ADIE").show();
+    $("#CodeWeek").show();
+    $("#Programamos").show();
+    $("#UNIR").show();
+    $("#Dojo").show();
+    $("#INTEF").show();
 }
 $(document).ready(function(){
     /*software*/      

@@ -92,7 +92,7 @@ h3{
     padding-top:10px;
     padding-bottom:10px;
 }
-#gymkhanaPanel, #drscratchPanel1, #drscratchPanel2, #FECyTPanel1, #FECyTPanel2, #FECyTPanel3, #FECyTPanel4, #e-MadridPanel{
+#gymkhanaPanel, #drscratchPanel1, #drscratchPanel2, #FECyTPanel1, #FECyTPanel2, #FECyTPanel3, #FECyTPanel4, #e-MadridPanel,#DojoPanel, #INTEFPanel, #CodeWeekPanel, #ADIEPanel, #UNIRPanel, #ProgramamosPanel{
     padding-top:0px;
     padding-bottom:0px;
     display:none;
@@ -119,26 +119,29 @@ h3{
 #Programamos a, #Dojo a, #INTEF a, #CodeWeek a, #ADIE a, #UNIR a{
     color:black;
 }
-#Dojo{
+#Dojo, #DojoPanel{
     background:#f4858e;    
 }
-#INTEF{
+#INTEF, #INTEFPanel{
     background: #bfe2ca;    
 }
-#CodeWeek{
+#CodeWeek, #CodeWeekPanel{
     background:#d0e2ec;
 }
-#ADIE{
+#ADIE, #ADIEPanel{
      background:  #fed88f;
 }
-#UNIR{
+#UNIR, #UNIRPanel{
      background:  #eee ;
 }
-#Programamos{
+#Programamos, #ProgramamosPanel{
     background:#a6daef;
 }
+
+
 #mas{
-    background:black;   
+    background:black;
+    display:none;
 }
 #mas a{
     color:white;
@@ -220,4 +223,12 @@ color:white;
     display:inline-block
 }
 
-
+@media only screen
+ and (min-device-width : 320px)
+ and (max-device-width : 480px) {
+    #Programamos{
+        left:0;
+        margin-left:0;
+        padding-left:3px;
+    }
+}

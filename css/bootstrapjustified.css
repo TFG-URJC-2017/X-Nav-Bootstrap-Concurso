@@ -21,6 +21,7 @@ text-align: center;
 }
 .nav > li > a:hover {
     background-color:rgba(88, 88, 88, 0.2);
+     background-origin: content-box;
 }
 .nav-justified > li:first-child > a {
 border-radius: 5px 5px 0 0;
