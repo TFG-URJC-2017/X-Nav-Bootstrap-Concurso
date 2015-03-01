@@ -231,4 +231,9 @@ color:white;
         margin-left:0;
         padding-left:3px;
     }
+    #Premios img
+    {
+        width: 100px;
+        height:100px
+    }
 }
