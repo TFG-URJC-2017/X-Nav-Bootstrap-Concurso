@@ -1,50 +1,50 @@
 <!DOCTYPE html>
-<html  lang='en' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+<html lang='es'>
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">    
     <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1">
-    <title>KGB-LLL (KinderGarten Group and Beyond - LifeLong Learning)</title>
+    <meta name="author" content="Victor Carrera">
+    <title> KGB-LLL (KinderGarten Group and Beyond - LifeLong Learning) </title>
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
     <!--PERSONALIZADO-->
-    <link rel="stylesheet" href="css/estilo.css">
+     <link rel="stylesheet" href="css/bootstrapjustified.css">
+     <link rel="stylesheet" href="css/estilo.css">
    <!-- Link al favicon-->
     <link type="image/png" href='img/500px-Scratchcat.svg.png' rel='icon' type='image/x-icon'/>
   </head>
   <body  scroll='auto'>
 <!-- NAVBAR
 ================================================== -->
-<div id="KGB-L3">
     <div class="navbar-wrapper">
         <div class="container">
-            <nav class="navbar navbar-inverse navbar-static-top">
-                <div class="container">
+            <nav class="navbar navbar-inverse navbar-fixed-top">
+                <div class="container">                    
                     <div class="navbar-header"> 
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" role="peticion">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
-                        </button>       
-                        <a style="cursor:help" class="navbar-brand" href="README.md">KGB-L3</a>
+                        </button>    
+                        <a style="cursor:help" class="navbar-brand" href="README.md">KGB-L3</a>                
                     </div>
                     <div id="navbar" class="navbar-collapse collapse">
-                        <ul class="nav navbar-nav">
-                            <li class="idConocenos"><a href="#Conocenos">Conócenos</a></li>
-                            <li class="idSoftware"><a href="#Software">Software</a></li>
-                            <li class="idProyectos"><a href="#Proyectos">Proyectos</a></li>
-                            <li class="idColaboraciones"><a href="#Colaboraciones">Colaboraciones</a></li>
-                            <li class="idMiembros"><a href="#Miembros">El equipo</a></li>
-                            <li class="idPremios"><a href="#Premios">Premios</a></li>
+                        <ul class="nav nav-justified">
+                            <li id="idConocenos"><a href="#Conocenos">Conócenos</a></li>
+                            <li id="idSoftware"><a href="#Software">Software</a></li>
+                            <li id="idProyectos"><a href="#Proyectos">Proyectos</a></li>
+                            <li id="idColaboraciones"><a href="#Colaboraciones">Colaboraciones</a></li>
+                            <li id="idMiembros"><a href="#Miembros">El equipo</a></li>
+                            <li id="idPremios"><a href="#Premios">Premios</a></li>
                         </ul>
                     </div>
                 </div>
             </nav>
         </div>
     </div>
-</div>
 <!--CONÓCENOS
 ================================================== -->
 <div id="Conocenos" class="anitem bgfondos">
@@ -53,8 +53,8 @@
         <hr style="margin:8px auto">
         <h2>CONÓCENOS</h2>
         <hr style="margin:8px auto">
-        <h1><strong>KGB-LLL<strong><br><small> (KinderGarten and Beyond and LifeLong Learning)</small></h1>
-        
+        <h1><strong>KGB-LLL<strong><br><small>(KinderGarten and Beyond and LifeLong Learning)</small></h1>
+        <noscript>visita la pagina con un buscador que soporte JavaScript</noscript>       
         <p>Somos un grupo de investigación de la URJC:<br>
         Cinco profesores, dos doctorandos y una docena de alumnos de máster y grado.</p> 
         <p><strong>KGB L3</strong> es investigación y promoción del pensamiento computacional.</p>
@@ -71,22 +71,27 @@
         <hr style="margin:8px auto">
         <div class="text-left">
             <div  id="drscratch" class="col-lg-6">
-                Dr. Scratch (<a href="http://drscratch.programamos.es/" title="pag web de dr. Scratch">http://drscratch.programamos.es/</a>):
+               <span id="arriba1"><span  class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span></span> Dr. Scratch <a href="http://drscratch.programamos.es/" title="pag web de dr. Scratch">[web]</a>
             </div> 
             <div  id="gymkhana" class="col-lg-6">
-                LibreSoft Gymkhana (<a href="http://gymkhana.libresoft.es/" title="web de gymkana">http://gymkhana.libresoft.es/</a>):
-            </div>    
+                <span id="arriba2"><span  class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span></span> LibreSoft Gymkhana <a href="http://gymkhana.libresoft.es/" title="web de gymkana">[web]</a>
+            </div> 
+            <div  id="mensaje" class="col-lg-12">  
+                <p class="centrame">
+                     Activa las pestañas para conocerlos un poco.
+                </p>
+            </div> 
             <div id="drscratchPanel1" class="col-lg-12">
-                <p>Es una plataforma web permite subir programas de Scratch, un lenguaje de programación visual orientado al aprendizaje de técnicas de programación para niños, para ser evaluados, de manera que el alumno recibirá realimentación sobre la calidad del programa, cómo mejorarlo y una evaluación global de sus capacidades de programación.</p> 
+                <p>Dr. Scratch: Es una plataforma web permite subir programas de Scratch, un lenguaje de programación visual orientado al aprendizaje de técnicas de programación para niños, para ser evaluados, de manera que el alumno recibirá realimentación sobre la calidad del programa, cómo mejorarlo y una evaluación global de sus capacidades de programación.</p> 
                 <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>[1|2]
             </div>
             <div id="drscratchPanel2" class="col-lg-12">    
-                La plataforma incluye técnicas de ludificación (gamification), de manera que el alumno puede ganar medallas y desarrollar sus habilidades de programación y alcanzar niveles de mayor complejidad y calidad. Dentro del proyecto se realizarán actividades específicamente orientadas al fomento de la programación para chicas, colectivos desfavorecidos y discapacitados.</p>
+                <p>La plataforma incluye técnicas de ludificación (gamification), de manera que el alumno puede ganar medallas y desarrollar sus habilidades de programación y alcanzar niveles de mayor complejidad y calidad. Dentro del proyecto se realizarán actividades específicamente orientadas al fomento de la programación para chicas, colectivos desfavorecidos y discapacitados.</p>
                 <span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>[2|2]
             </div>
            
             <div id="gymkhanaPanel" class="col-lg-12">
-                 <p>Es un juego educativo y geologalizado de codigo abierto para aprendizaje y aplicaciones de turismo. Esta basado en la aplicacion LibreGeoSocial mobile social network application,que incluye una interfaz de realidad aumentada. tu puedes controlar y organizar una gymkana mobil desde un movil Android(new generation gymkhanas) sin gran esfuerzo.</p>
+                 <p>gymkhana: Es un juego educativo y geologalizado de codigo abierto para aprendizaje y aplicaciones de turismo. Esta basado en la aplicacion LibreGeoSocial mobile social network application,que incluye una interfaz de realidad aumentada.Se puede controlar y organizar una gymkana desde un movil Android(new generation gymkhanas) sin gran esfuerzo.</p>
                  <span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>
              </div>
         </div>
@@ -102,12 +107,41 @@
         <h2>PROYECTOS</h2>
         <hr style="margin:8px auto">
         <div class="text-left">
-            <p>e-Madrid (<a href="http://www.emadridnet.org" title="web e-Madrid">http://www.emadridnet.org</a>):<br>
-             Red de excelencia de la Comunidad de Madrid sobre Technology Enhanced Learning, compuesta por cinco universidades públicas de la Comunidad de Madrid y la UNED. Dentro del marco de eMadrid, se organiza un seminario mensual donde se presentan iniciativas relacionadas con el e-learning que tienen amplia difusión.</p>
-
-            <p>FECyT: El objetivo principal de este proyecto es el despliegue y mantenimiento de una plataforma web, llamada Dr. Scratch, que fomente la creatividad, la capacidad tecnológica y de innovación de alumnos de primaria y secundaria. Esta plataforma web permite subir programas de Scratch, un lenguaje de programación visual orientado al aprendizaje de técnicas de programación para niños, para ser evaluados, de manera que el alumno recibirá realimentación sobre la calidad del programa, cómo mejorarlo y una evaluación global de sus capacidades de programación. La plataforma incluye técnicas de ludificación (gamification), de manera que el alumno puede ganar medallas y, si sigue las recomendaciones que se le van dando, desarrollar sus habilidades de programación y alcanzar niveles de mayor complejidad y de alta calidad. La plataforma permite ser usada sin crearse una cuenta, aunque si el alumno/profesor se crea una cuenta, tendrá disponible su historial, así como la posibilidad de interactuar con otros participantes.</p>
+            <div  id="e-Madrid" class="col-lg-6">
+               <span id="arriba3"><span  class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span></span> e-Madrid <a href="http://www.emadridnet.org" title="web e-Madrid">[web]</a>
+            </div> 
+            <div  id="FECyT" class="col-lg-6">
+               <span id="arriba4"><span  class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span></span> FECyT 
+            </div> 
+            <div  id="mensaje1" class="col-lg-12">  
+                <p class="centrame">
+                    Activa las pestañas para conocerlos un poco.
+                </p>
+            </div> 
+            <div id="e-MadridPanel" class="col-lg-12">
+                <p>e-Madrid: Red de excelencia de la Comunidad de Madrid sobre Technology Enhanced Learning, compuesta por cinco universidades públicas de la Comunidad de Madrid y la UNED. Dentro del marco de eMadrid, se organiza un seminario mensual donde se presentan iniciativas relacionadas con el e-learning que tienen amplia difusión.</p> 
+                <span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>
+            </div>
+            <div id="FECyTPanel1" class="col-lg-12">
+                <p>FECyT: El objetivo principal de este proyecto es el despliegue y mantenimiento de una plataforma web, llamada Dr. Scratch, que fomente la creatividad, la capacidad tecnológica y de innovación de alumnos de primaria y secundaria.</p>
+                <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>[1|4]
+            </div>           
+            <div id="FECyTPanel2" class="col-lg-12">
+                 <p>Esta plataforma web permite subir programas de Scratch, un lenguaje de programación visual orientado al aprendizaje de técnicas de programación para niños, para ser evaluados, de manera que el alumno recibirá realimentación sobre la calidad del programa, cómo mejorarlo y una evaluación global de sus capacidades de programación.</p>
+                  <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>[2|4]
+            </div>
+            <div id="FECyTPanel3" class="col-lg-12">
+                 <p>La plataforma incluye técnicas de ludificación (gamification), de manera que el alumno puede ganar medallas y, si sigue las recomendaciones que se le van dando, desarrollar sus habilidades de programación y alcanzar niveles de mayor complejidad y de alta calidad.</p>
+                  <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>[3|4]
+            </div>
+            <div id="FECyTPanel4" class="col-lg-12">
+                 <p>La plataforma permite ser usada sin crearse una cuenta, aunque si el alumno/profesor se crea una cuenta, tendrá disponible su historial, así como la posibilidad de interactuar con otros participantes.</p>
+                  <span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>[4|4]
+            </div>
         </div>
     </div>
+</div>
+
 </div>
 <!--COLABORACIONES
 ================================================== -->
@@ -120,32 +154,32 @@
         <hr style="margin:8px auto">    
         <p class="text-left">Colaboramos con varias asociaciones y entidades. En particular con: </p>
         <div id="Asociaciones" class="row">            
-            <div id="CodeWeek" class="col-lg-2" onmouseover="textCodeWeek()" >
+            <div id="CodeWeek" class="col-lg-2 col-xs-4">
                 <div class="centrame">  
                     <a href="javascript:textCodeWeek()" title="información semana de la programacion" >codeweek</a>
                  </div>
             </div>            
-            <div id="ADIE" class="col-lg-2" onmouseover="textADIE()">
+            <div id="ADIE" class="col-lg-2 col-xs-4">
                 <div class="centrame"> 
                     <a href="javascript:textADIE()" title="información Asociación para el Desarrollo de la Informática">ADIE</a>
                 </div>
             </div>            
-            <div id="UNIR" class="col-lg-2" onmouseover="textUNIR()">
+            <div id="UNIR" class="col-lg-2 col-xs-4">
                 <div class="centrame"> 
                     <a href="javascript:textUNIR()" title="información Universidad Internacional de la Rioja">UNIR</a>
                 </div>
             </div>         
-            <div id="Programamos" class="col-lg-2" onmouseover="textProgramamos()">
+            <div id="Programamos" class="col-lg-2 col-xs-4">
                 <div class="centrame"> 
                     <a href="javascript:textProgramamos()" title=" información programamos.es">Programamos.es</a>
                 </div>
             </div>            
-            <div id="Dojo" class="col-lg-2" onmouseover="textDojo()">
+            <div id="Dojo" class="col-lg-2 col-xs-4 ">
                 <div class="centrame"> 
                     <a href="javascript:textDojo()" title="información Coder-Dojo Medialab Prado">Coder-Dojo</a>
                 </div>
             </div>
-            <div id="INTEF" class="col-lg-2" onmouseover="textINTEF()">
+            <div id="INTEF" class="col-lg-2 col-xs-4">
                <div class="centrame">  
                    <a href="javascript:textINTEF()" title="información Instituto Nacional de Tecnologías Educativas y de Formación del Profesorado">INTEF</a>
                </div>
@@ -324,11 +358,11 @@
         </div>    
     </div>
 </div>
-<!-- Bootstrap core JavaScript
+<!--JavaScript, Jquery
  ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="http://code.jquery.com/jquery.min.js"></script>
-    <script src="js/mijavascript.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="js/mijavascript.js"></script>
   </body>
 </html>

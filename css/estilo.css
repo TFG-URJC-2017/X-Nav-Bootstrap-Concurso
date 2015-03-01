@@ -3,18 +3,18 @@
  */
 
 html,body {margin:0px; height:100%;}
-*{color:#000}
-.navbar-nav > li > a {color:#000!important;}
+*{color:black}
+
+a{color: blue;}
+h1 .small, h1 small, h4 .small, h4 small{color:black;}
 
 h1,h2
 {
-    text-align:center;
-    font:7 Bodoni;    
-    
+    text-align:center;   
 }
 .reborde{
     width: 300px;
-    height:300px
+    height:300px;
     color: #000;
     text-shadow:
     -1px -1px 0 #fff,
@@ -35,10 +35,6 @@ h1,h2
     background-attachment: fixed;
 }
 
-.idConocenos, .idSoftware, .idProyectos, .idColaboraciones, .idMiembros, .idPremios
-{  
-
-}
 
 .centrame
 {
@@ -60,18 +56,7 @@ h1,h2
     min-height:1px;
 }
  
-#KGB-L3{
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 20;  
-    background:$color-primary-0;
-}
 
-#KGB-LLL .navbar{
-    border-radius: 10px!important;
-}
 
 
 #Conocenos{
@@ -80,52 +65,48 @@ h1,h2
     padding-bottom:5%;
     z-index: 1;
 }
-.idConocenos
+#idConocenos
 {
     background:#f4858e;
 }
 
-#Software{
-    background:#d0e2ec;
+#Software, #idSoftware{
+    background:#e8e3f0;
     z-index: 2;
 }
-.idSoftware{
-    background:#d0e2ec;
+#Software{
+  padding-bottom:10px;
 }
-
-#drscratch, #drscratchPanel1, #drscratchPanel2{
-    background:#a6daef;
+#drscratch, #drscratchPanel1, #drscratchPanel2, #FECyT, #FECyTPanel1, #FECyTPanel2, #FECyTPanel3 , #FECyTPanel4{
+    background:#bfe2ca;
     padding-top:10px;
     padding-bottom:10px;
 }
-#gymkhana, #gymkhanaPanel{
-    background:#fff;
+#gymkhana, #gymkhanaPanel, #e-Madrid, #e-MadridPanel {
+    background:  #fed88f;
     padding-top:10px;
     padding-bottom:10px;
 }
-#gymkhanaPanel, #drscratchPanel1, #drscratchPanel2{
+#gymkhanaPanel, #drscratchPanel1, #drscratchPanel2, #FECyTPanel1, #FECyTPanel2, #FECyTPanel3, #FECyTPanel4, #e-MadridPanel{
     padding-top:0px;
     padding-bottom:0px;
     display:none;
+    border-bottom-right-radius:8px;
+    border-bottom-left-radius:8px; 
 }
 
-#Proyectos{
+#Proyectos, #idProyectos{
     background:#a6daef;
     z-index: 3;
 }
-.idProyectos{
-    background:#a6daef;
-    z-index: 1;
-}
+
 
 #Colaboraciones{
     background:#fff;
     padding-top:15px;
 }
-#Colaboraciones a{
-    color:#000;
-}
-.idColaboraciones{
+
+#idColaboraciones{
     background:#fff;
 }
 #Programamos, #Dojo, #INTEF, #CodeWeek, #ADIE, #UNIR{
@@ -157,9 +138,18 @@ border-bottom-right-radius:8px;
 border-bottom-left-radius:8px; 
 padding:10%;
 }
-#visor a{
-color:#888;
+#mensaje,#mensaje1{
+
+background:black;
+height:60px;
+border-bottom-right-radius:8px;
+border-bottom-left-radius:8px;
+text-align:center;
 }
+#mensaje p, #mensaje1 p{
+    color:white;
+}
+
 #textoCambiante{
 color:white;
 }
@@ -171,7 +161,7 @@ color:white;
     vertical-align:middle;
     padding-top:5px;
 } 
-.idMiembros
+#idMiembros
 {
     background:  #fed88f;
 }
@@ -200,7 +190,7 @@ color:white;
     background: #bfe2ca;
     padding-bottom:20%;
 }
-.idPremios{
+#idPremios{
     background: #bfe2ca;
 }
 
