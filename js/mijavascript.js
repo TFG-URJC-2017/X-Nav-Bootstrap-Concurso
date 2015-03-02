@@ -95,6 +95,18 @@ function closetrue(){
     close6=true;
     close7=true;
 }    
+function textmas(){
+    cerrarotros();
+    cerrarPanel();
+    $("#mas").slideUp("fast");
+    $("#ADIE").show();
+    $("#CodeWeek").show();
+    $("#Programamos").show();
+    $("#UNIR").show();
+    $("#Dojo").show();
+    $("#INTEF").show();
+    $("#mensaje2").slideDown("slow");
+}
 
 function  textCodeWeek(){    
         if ($( window ).width() < 600){            
@@ -106,7 +118,7 @@ function  textCodeWeek(){
             $("#CodeWeekPanel").slideDown("slow");     
             $("#arriba5").empty().html( '<span  class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span>'); 
         }else
-             $("#mensaje2").slideDown("slow");
+             textmas();
         var salve=!close2;
         closetrue();
         close2=salve;     
@@ -121,7 +133,7 @@ function  textADIE(){
             $("#ADIEPanel").slideDown("slow");
             $("#arriba6").empty().html( '<span  class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span>'); 
         }else
-             $("#mensaje2").slideDown("slow");
+             textmas();
         var salve=!close3;
         closetrue();
         close3=salve;          
@@ -136,7 +148,7 @@ function  textUNIR(){
             $("#UNIRPanel").slideDown("slow");   
             $("#arriba7").empty().html( '<span  class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span>'); 
         }else
-            $("#mensaje2").slideDown("slow"); 
+            textmas(); 
         var salve=!close4;
         closetrue();
         close4=salve;          
@@ -151,7 +163,7 @@ function  textProgramamos(){
             $("#ProgramamosPanel").slideDown("slow"); 
             $("#arriba8").empty().html( '<span  class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span>'); 
         }else
-            $("#mensaje2").slideDown("slow");
+            textmas();
         var salve=!close5;
         closetrue();
         close5=salve;
@@ -167,7 +179,7 @@ function  textDojo(){
             $("#DojoPanel").slideDown("slow"); 
             $("#arriba9").empty().html( '<span  class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span>'); 
         }else
-            $("#mensaje2").slideDown("slow");
+            textmas();
         var salve=!close6;
         closetrue();
         close6=salve;
@@ -182,24 +194,13 @@ function  textINTEF(){
             $("#INTEFPanel").slideDown("slow");
             $("#arriba10").empty().html( '<span  class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span>'); 
         }else
-            $("#mensaje2").slideDown("slow");
+            textmas();
         var salve=!close7;
         closetrue();
         close7=salve;
 }
 
-function textmas(){
-    cerrarotros();
-    cerrarPanel();
-    $("#mas").slideUp("fast");
-    $("#ADIE").show();
-    $("#CodeWeek").show();
-    $("#Programamos").show();
-    $("#UNIR").show();
-    $("#Dojo").show();
-    $("#INTEF").show();
-    $("#mensaje2").slideDown("slow");
-}
+
 $(document).ready(function(){
     /*software*/      
     $("#drscratch").click(function(){textdrscratch()});
@@ -269,7 +270,8 @@ $(document).ready(function(){
     $("#Programamos").click(function(){textProgramamos()});
     $("#Dojo").click(function(){textDojo()}); 
     $("#INTEF").click(function(){textINTEF()});
-/* Funciones falsas creada spara acceder solo usando tab + intro*/
+    $("#mas").click(function(){textmas()});
+/* Funciones falsas creadas para acceder solo usando tab + intro*/
 function  ejecutadrscratch(){ };
 function  ejecutagymkhana(){ };
 function  ejecutaeMadrid(){ };
@@ -280,3 +282,4 @@ function  ejecutaUNIR(){ };
 function  ejecutaProgramamos(){ };
 function  ejecutaDojo(){ };
 function  ejecutaINTEF(){ };
+function  ejecutamas(){ };
