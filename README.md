@@ -7,7 +7,7 @@ Ejercicio de las asignaturas AT y DAT. Tema Bootstrap.
 
 Utilizando componentes Bootstrap, realiza una página para el grupo de investigación KGB-LLL (KinderGarten Group and Beyond - LifeLong Learning) de la Universidad Rey Juan Carlos.
 
-Para realizar el ejercicio, debes crear un <i>fork</i> del repositorio del <a href="https://github.com/CursosWeb/X-NAV-Bootstrap-Concurso">ejercicio 5.4.7</a>, donde se incluyen ya algunos elemenos que te servirán de punto de partida (básicamete textos sobre el grupo de investigación y algunas imágenes). Puedes añadir tantos archivos CSS, Javascript e imágenes como desees, pero sólo puede haber una página web (index.html). Todos los elementos utilizados tienen que tener una licencia libre.
+Para realizar el ejercicio, debes crear un <i>fork</i> del repositorio del <a href="https://github.com/CursosWeb/X-NAV-Bootstrap-Concurso">ejercicio 5.4.7</a>, donde se incluyen ya algunos elementos que te servirán de punto de partida (básicamente textos sobre el grupo de investigación y algunas imágenes). Puedes añadir tantos archivos CSS, Javascript e imágenes como desees, pero sólo puede haber una página web (index.html). Todos los elementos utilizados tienen que tener una licencia libre.
 
 ## Forma de entrega
 
@@ -19,7 +19,7 @@ web resultante. El resultado no debería dar errores en <a href="http://blog.get
 Estilo minimalista:
 * Solo colores y tipografías claras
 * Poco texto en cada pantalla
-* Pantallas mono-temáticas sin scroll
+* Pantallas mono-temáticas sin necesidad de scroll
 * Aplicados principios de  psicología del color en las secciones.
 
 Diseño para móviles:
@@ -45,7 +45,7 @@ Para mejorar la Accesibilidad
 * saltos facilitados por etiquetas a sin texto.
 * Imágenes y texto para los enlaces.
 * distancia mínima de contraste 3:1
-
+* ==>Se puede navegar completamente solo con tabulador e intro no necesita ratón
 
 Adornitos:
 * icono favicon  para distinguirlo de otras pestañas.
@@ -55,6 +55,6 @@ Adornitos:
 Cosas a seguir mejorando:
 * Implementar botón para navegación automática: Posibilidad de añadir archivo de audio para navegación narrada. 
 * Crear versión ligera de css y jss. (no implementada por claridad)
-* navegación realizable sin ratón. (tabulador + intos)
-* descubrir como solucionar tema de etiquetas h1 o h2 antes de ul.
-* averiguar forma de generar otra imagen de miniatura para navegadores
+* Descubrir como solucionar tema de etiquetas h1 o h2 antes de ul.
+* Averiguar forma de generar otra imagen de miniatura para navegadores
+* Como solo se los github de Gregorio y Baradona son los únicos que enlazan los demás apuntan a "#"

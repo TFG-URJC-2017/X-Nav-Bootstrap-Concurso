@@ -1,4 +1,3 @@
-
 var panelnumber=0;
 var panelnumber1=0;
 var close=true;
@@ -263,3 +262,21 @@ $(document).ready(function(){
     $("#FECyTPanel3").click(function(){textFECyT()});
     $("#FECyTPanel4").click(function(){textFECyT()});    
 });
+    /*colaboraciones*/
+    $("#CodeWeek").click(function(){textCodeWeek()});
+    $("#ADIE").click(function(){textADIE()});
+    $("#UNIR").click(function(){textUNIR()});
+    $("#Programamos").click(function(){textProgramamos()});
+    $("#Dojo").click(function(){textDojo()}); 
+    $("#INTEF").click(function(){textINTEF()});
+/* Funciones falsas creada spara acceder solo usando tab + intro*/
+function  ejecutadrscratch(){ };
+function  ejecutagymkhana(){ };
+function  ejecutaeMadrid(){ };
+function  ejecutaFECyT(){ };
+function  ejecutaCodeWeek(){ };
+function  ejecutaADIE(){ };
+function  ejecutaUNIR(){ };
+function  ejecutaProgramamos(){ };
+function  ejecutaDojo(){ };
+function  ejecutaINTEF(){ };

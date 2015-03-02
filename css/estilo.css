@@ -32,7 +32,9 @@ h3{
     -1px 1px 0 #fff,
     1px 1px 0 #fff;
 }
-
+a.objetivo{
+    color:black;
+}
 #Conocenos, #Software, #Proyectos, #Colaboraciones,  #Miembros, #Premios
 {
     text-align:center;
