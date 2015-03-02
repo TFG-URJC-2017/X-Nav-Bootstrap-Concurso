@@ -62,7 +62,22 @@ function textFECyT(){
         panelnumber1=0;
     }
 }
-function cerrarall(){
+function cerrarPanel(){
+    $("#ADIEPanel").hide();
+    $("#CodeWeekPanel").hide();
+    $("#ProgramamosPanel").hide();
+    $("#UNIRPanel").hide();
+    $("#DojoPanel").hide();
+    $("#INTEFPanel").hide();   
+    $("#mensaje2").slideUp("slow");
+    $("#arriba5").empty().html('<span  class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>');
+    $("#arriba6").empty().html('<span  class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>');
+    $("#arriba7").empty().html('<span  class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>');
+    $("#arriba8").empty().html('<span  class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>');
+    $("#arriba9").empty().html('<span  class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>');
+    $("#arriba10").empty().html('<span  class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>');
+}
+function cerrarotros(){
     $("#mas").slideDown("fast");
     $("#ADIE").hide();
     $("#CodeWeek").hide();
@@ -70,108 +85,113 @@ function cerrarall(){
     $("#UNIR").hide();
     $("#Dojo").hide();
     $("#INTEF").hide(); 
-    $("#ADIEPanel").hide();
-    $("#CodeWeekPanel").hide();
-    $("#ProgramamosPanel").hide();
-    $("#UNIRPanel").hide();
-    $("#DojoPanel").hide();
-    $("#INTEFPanel").hide();    
 }
 
+
 function closetrue(){
-    var close2=true;
-    var close3=true;
-    var close4=true;
-    var close5=true;
-    var close6=true;
-    var close7=true;
+    close2=true;
+    close3=true;
+    close4=true;
+    close5=true;
+    close6=true;
+    close7=true;
 }    
+
 function  textCodeWeek(){    
         if ($( window ).width() < 600){            
-                cerrarall();
-                $("#CodeWeek").show();               
+            cerrarotros();
+            $("#CodeWeek").show();               
         }
-        $("#CodeWeekPanel").slideToggle("slow");     
-        if (close2)  
+        cerrarPanel();        
+        if (close2){  
+            $("#CodeWeekPanel").slideDown("slow");     
             $("#arriba5").empty().html( '<span  class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span>'); 
-        else
-            $("#arriba5").empty().html('<span  class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>');
+        }else
+             $("#mensaje2").slideDown("slow");
         var salve=!close2;
         closetrue();
-        close2=salve;
+        close2=salve;     
 }
 function  textADIE(){      
-       $("#ADIEPanel").slideToggle("slow");        
-                if ($( window ).width() < 600){            
-            cerrarall();
+       if ($( window ).width() < 600){            
+            cerrarotros();
             $("#ADIE").show();
         }
-        if (close3)  
+        cerrarPanel();   
+        if (close3){  
+            $("#ADIEPanel").slideDown("slow");
             $("#arriba6").empty().html( '<span  class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span>'); 
-        else
-            $("#arriba6").empty().html('<span  class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>');
+        }else
+             $("#mensaje2").slideDown("slow");
         var salve=!close3;
         closetrue();
-        close3=salve;
+        close3=salve;          
 }
-function  textUNIR(){      
-       $("#UNIRPanel").slideToggle("slow");        
-                if ($( window ).width() < 600){            
-            cerrarall();
+function  textUNIR(){           
+       if ($( window ).width() < 600){            
+            cerrarotros();
             $("#UNIR").show();
         }
-        if (close4)  
+        cerrarPanel();   
+        if (close4){  
+            $("#UNIRPanel").slideDown("slow");   
             $("#arriba7").empty().html( '<span  class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span>'); 
-        else
-            $("#arriba7").empty().html('<span  class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>');
+        }else
+            $("#mensaje2").slideDown("slow"); 
         var salve=!close4;
         closetrue();
-        close4=salve;
+        close4=salve;          
 }
-function  textProgramamos(){      
-       $("#ProgramamosPanel").slideToggle("slow");        
-                if ($( window ).width() < 600){            
-            cerrarall();
+function  textProgramamos(){                    
+       if ($( window ).width() < 600){            
+            cerrarotros();
             $("#Programamos").show();
         }
-        if (close5)  
+        cerrarPanel();   
+        if (close5){  
+            $("#ProgramamosPanel").slideDown("slow"); 
             $("#arriba8").empty().html( '<span  class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span>'); 
-        else
-            $("#arriba8").empty().html('<span  class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>');
+        }else
+            $("#mensaje2").slideDown("slow");
         var salve=!close5;
         closetrue();
         close5=salve;
+        
 }
-function  textDojo(){      
-       $("#DojoPanel").slideToggle("slow");        
-                if ($( window ).width() < 600){            
-            cerrarall();
+function  textDojo(){                    
+       if ($( window ).width() < 600){            
+            cerrarotros();
             $("#Dojo").show();
         }
-        if (close6)  
+        cerrarPanel();
+        if (close6){
+            $("#DojoPanel").slideDown("slow"); 
             $("#arriba9").empty().html( '<span  class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span>'); 
-        else
-            $("#arriba9").empty().html('<span  class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>');
+        }else
+            $("#mensaje2").slideDown("slow");
         var salve=!close6;
         closetrue();
         close6=salve;
 }
-function  textINTEF(){      
-       $("#INTEFPanel").slideToggle("slow");        
-                if ($( window ).width() < 600){            
-            cerrarall();
+function  textINTEF(){                     
+       if ($( window ).width() < 600){            
+            cerrarotros();
             $("#INTEF").show();
         }
-        if (close7)  
+        cerrarPanel();
+        if (close7){  
+            $("#INTEFPanel").slideDown("slow");
             $("#arriba10").empty().html( '<span  class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span>'); 
-        else
-            $("#arriba10").empty().html('<span  class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>');
+        }else
+            $("#mensaje2").slideDown("slow");
         var salve=!close7;
         closetrue();
         close7=salve;
 }
+
 function textmas(){
-    cerrarall();
+    cerrarotros();
+    cerrarPanel();
     $("#mas").slideUp("fast");
     $("#ADIE").show();
     $("#CodeWeek").show();
@@ -179,6 +199,7 @@ function textmas(){
     $("#UNIR").show();
     $("#Dojo").show();
     $("#INTEF").show();
+    $("#mensaje2").slideDown("slow");
 }
 $(document).ready(function(){
     /*software*/      

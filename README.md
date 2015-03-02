@@ -17,19 +17,24 @@ web resultante. El resultado no debería dar errores en <a href="http://blog.get
 
 ## Cosas que implementa.
 Estilo minimalista:
-* Solo colores y tipografias claras
+* Solo colores y tipografías claras
 * Poco texto en cada pantalla
-* Pantallas mono tematicas sin scroll
-* Aplicados principios de  psicologia del color en las secciones.
+* Pantallas mono-temáticas sin scroll
+* Aplicados principios de  psicología del color en las secciones.
+
+Diseño para móviles:
+* La web se ve como una aplicación casi nativa en los móviles en vertical.
 
 Para mejorar SEO:
 * Un solo h1 en el documento, 
 * mas texto que etiquetas,
 * pocas imágenes para que la carga sea rápida
 
-Para mejora de navegacion
+
+Para mejora de navegación
 * title y h1 con texto similar
 * etiquetas escalonada
+
 
 Para mejorar la Accesibilidad
 * Enlaces con title  para saber que  harán.
@@ -41,15 +46,15 @@ Para mejorar la Accesibilidad
 * Imágenes y texto para los enlaces.
 * distancia mínima de contraste 3:1
 
+
 Adornitos:
 * icono favicon  para distinguirlo de otras pestañas.
-* icono en las pestañas cambia si estas estan desplegadas.
+* icono en las pestañas cambia si estas están desplegadas.
+
 
 Cosas a seguir mejorando:
-* Recuperar comportamiento responsive 75% conseguido
-* Implementar botón para navegación automática:Posibilidad de añadir archivo de audio para navegación narrada 
+* Implementar botón para navegación automática: Posibilidad de añadir archivo de audio para navegación narrada. 
 * Crear versión ligera de css y jss. (no implementada por claridad)
-* Añadir Footer con la licencia y la imagen de la licencia.
 * navegación realizable sin ratón. (tabulador + intos)
 * descubrir como solucionar tema de etiquetas h1 o h2 antes de ul.
 * averiguar forma de generar otra imagen de miniatura para navegadores
