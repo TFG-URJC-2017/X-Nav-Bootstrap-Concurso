@@ -77,7 +77,9 @@ function cerrarPanel(){
     $("#arriba10").empty().html('<span  class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>');
 }
 function cerrarotros(){
-    $("#mas").slideDown("fast");
+     if ($( window ).width() < 600){  
+        $("#mas").slideDown("fast");
+     }
     $("#ADIE").hide();
     $("#CodeWeek").hide();
     $("#Programamos").hide();
