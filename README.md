@@ -33,7 +33,7 @@ Para mejorar SEO:
 
 Para mejora de navegación
 * title y h1 con texto similar
-* etiquetas escalonada
+* etiquetas escalonadas
 
 
 Para mejorar la Accesibilidad
