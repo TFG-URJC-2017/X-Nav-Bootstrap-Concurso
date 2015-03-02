@@ -16,31 +16,40 @@ que incluya elementos vía CDN, a ser posible, para que se pueda ver la
 web resultante. El resultado no debería dar errores en <a href="http://blog.getbootstrap.com/2014/09/23/bootlint/">Bootlint</a>.
 
 ## Cosas que implementa.
+Estilo minimalista:
+1. Solo colores y tipografias claras
+2. Poco texto en cada pantalla
+3. Pantallas mono tematicas sin scroll
+4. Aplicados principios de  psicologia del color en las secciones.
+
 Para mejorar SEO:
-	un solo h1 en el documento
-	mas texto que etiquetas
-	pocas imágenes y poco js para que la carga sea rápida
+1. Un solo h1 en el documento, 
+2. mas texto que etiquetas,
+3. pocas imágenes para que la carga sea rápida
+
+Para mejora de navegacion
+1. title y h1 con texto similar
+2. etiquetas escalonada
 
 Para mejorar la Accesibilidad
-	-Enlaces con title  para saber que  harán.
-	-fotos con etiqueta alt descriptiva, favorece a los lectores de pantalla.
-	-strong para poner énfasis negrita en vez de b.
-	-menú siempre en la misma posición.
-	-información de cada sección  ocupa una pantalla. 
-	-saltos facilitados por etiquetas a sin texto.
-	-navegación realizable sin ratón.
-	-Imágenes y texto para los enlaces.
-	-distancia mínima de contraste 3:1
-	-
+1. Enlaces con title  para saber que  harán.
+2. fotos con etiqueta alt descriptiva, favorece a los lectores de pantalla.
+3. strong para poner énfasis negrita en vez de b.
+4. menú siempre en la misma posición.
+5. información de cada sección  ocupa una pantalla. 
+6. saltos facilitados por etiquetas a sin texto.
+7. Imágenes y texto para los enlaces.
+8. distancia mínima de contraste 3:1
 
 Adornitos:
-	-icono favicon  para distinguirlo de otras pestañas.
-
+* icono favicon  para distinguirlo de otras pestañas.
+* icono en las pestañas cambia si estas estan desplegadas.
 
 Cosas a seguir mejorando:
-	-Recuperar comportamiento responsive 
-	-Implementar botón para navegación automática
-		Posibilidad de añadir archivo de audio para navegación narrada.
-		Crear versión ligera de css y jss.
-      -Añadir Footer con la licencia y la imagen de la licencia.
-	-Añadir algunas fotos mas.
+* Recuperar comportamiento responsive 75% conseguido
+* Implementar botón para navegación automática:Posibilidad de añadir archivo de audio para navegación narrada 
+* Crear versión ligera de css y jss. (no implementada por claridad)
+* Añadir Footer con la licencia y la imagen de la licencia.
+* navegación realizable sin ratón. (tabulador + intos)
+* descubrir como solucionar tema de etiquetas h1 o h2 antes de ul.
+* averiguar forma de generar otra imagen de miniatura para navegadores
