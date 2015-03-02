@@ -270,6 +270,12 @@ $(document).ready(function(){
     $("#Programamos").click(function(){textProgramamos()});
     $("#Dojo").click(function(){textDojo()}); 
     $("#INTEF").click(function(){textINTEF()});
+    $("#CodeWeekPanel").click(function(){textCodeWeek()});
+    $("#ADIEPanel").click(function(){textADIE()});
+    $("#UNIRPanel").click(function(){textUNIR()});
+    $("#ProgramamosPanel").click(function(){textProgramamos()});
+    $("#DojoPanel").click(function(){textDojo()}); 
+    $("#INTEFPanel").click(function(){textINTEF()});
     $("#mas").click(function(){textmas()});
 /* Funciones falsas creadas para acceder solo usando tab + intro*/
 function  ejecutadrscratch(){ };
