@@ -34,7 +34,7 @@ Para mejorar SEO:
 Para mejora de navegación
 * title y h1 con texto similar
 * etiquetas escalonadas
-
+* uso de etiquetas semanticas
 
 Para mejorar la Accesibilidad
 * Enlaces con title  para saber que  harán.
