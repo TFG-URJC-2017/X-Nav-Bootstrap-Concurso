@@ -12,6 +12,9 @@ h1 .small, h1 small, h4 .small, h4 small{color:black;}
 
 h1,h2
 {    
+    voice-family: paul;
+    stress: 20;
+    richness: 90;
     text-align:center;  
     font-family: Open Sans; font-size: 26px; font-style: normal; font-variant: normal; font-weight: 500; line-height: 30.4px;
 }
@@ -20,6 +23,10 @@ h2,h3{
     
 }
 h3{
+    voice-family: female;
+    voice-balance: left;
+    voice-pitch: high;
+    voice-volume: -6dB;
     font-family: Open Sans; font-size: 18px; font-style: normal; font-variant: normal; 
 }
 .reborde{
@@ -37,6 +44,7 @@ a.objetivo{
 }
 #Conocenos, #Software, #Proyectos, #Colaboraciones,  #Miembros, #Premios
 {
+
     text-align:center;
     padding-left: 8%;
     padding-right: 8%;

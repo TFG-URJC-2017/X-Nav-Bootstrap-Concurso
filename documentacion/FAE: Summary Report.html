@@ -1,0 +1,408 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us"><head>
+<title>FAE: Summary Report</title>
+<meta name="author" content="Nicholas Hoyt">
+<meta name="description" content="FAE: Summary Report">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="FAE:%20Summary%20Report_files/fae_screen.css" type="text/css">
+<link rel="stylesheet" href="FAE:%20Summary%20Report_files/fae_django.css" type="text/css">
+<link rel="stylesheet" href="FAE:%20Summary%20Report_files/fae_print.css" type="text/css" media="print">
+<link rel="shortcut icon" href="https://fae.cita.illinois.edu/media/images/favicon.ico" type="image/x-icon">
+<!--[if IE]>
+<style type="text/css">
+#header div.subheader { padding: 0.25em 0 0.5em 0; }
+#header div.subheader ul.top-menu { padding-right: 1em; }
+</style>
+<![endif]-->
+
+
+<script type="text/javascript">
+/* Define getElement() for browsers new and old. */
+if (document.getElementById) {
+    getElement = function(id) { return document.getElementById(id); }
+} else if (document.all) {
+    getElement = function(id) { return document.all[id]; };
+} else if (document.layers) {
+    getElement = function(id) { return document.layers[id]; };
+} else {
+    getElement = function() { return null; }
+}
+function enable(id) {
+  var widget = getElement(id);
+  widget.disabled = false;
+}
+function disable(id) {
+  var widget = getElement(id);
+  widget.disabled = true;
+}
+function decode(id) {
+  var prefix = "Email: ";
+  var linkText = "Contact Us";
+
+  // get the encoded element if it exists
+  var srcNode = getElement(id);
+  if (!srcNode) { return; }
+
+  // decode the address
+  var address = srcNode.firstChild.nodeValue;
+  address = address.replace(prefix, "");
+  address = address.replace(/ at /, "@");
+  address = address.replace(/ dot /g, ".");
+
+  // construct the decoded link element
+  var tgtNode = document.createElement("a");
+
+  var hrefAttr = document.createAttribute("href");
+  hrefAttr.value = "mailto:" + address;
+  tgtNode.setAttributeNode(hrefAttr);
+
+  var textNode = document.createTextNode(linkText);
+  tgtNode.appendChild(textNode);
+
+  // get parent node of encoded element
+  var prnt = srcNode.parentNode;
+  prnt.replaceChild(tgtNode, srcNode);
+}
+</script>
+
+<script type="text/javascript" src="FAE:%20Summary%20Report_files/prototype.js"></script>
+<script type="text/javascript" src="FAE:%20Summary%20Report_files/external.js"></script>
+
+</head>
+<body onload="addHandlers(); decode('contact')">
+<!-- header -->
+<div id="header">
+<div class="left"><a href="https://fae.cita.illinois.edu/"><img src="FAE:%20Summary%20Report_files/fae_logo.gif" alt="fae"></a></div>
+<div class="subtitle"><span class="large">Functional Accessibility Evaluator 1.1</span><br>University of Illinois at Urbana-Champaign</div>
+<div id="uiuc"><img alt="University of Illinois logo" src="FAE:%20Summary%20Report_files/uiuc_logo.jpg"></div>
+<div class="subheader">
+<h2 class="hidden">Navigation: Utilities</h2>
+<ul class="top-menu">
+<li><a href="https://fae.cita.illinois.edu/about/">About FAE</a></li>
+
+<li><span class="separator">|</span><a href="https://fae.cita.illinois.edu/accounts/register/">Register</a></li>
+<li><span class="separator">|</span><a href="https://fae.cita.illinois.edu/accounts/login/?next=/">Log In</a></li>
+
+</ul>
+</div>
+</div>
+<!-- sidebar -->
+
+
+<div id="sidebar">
+<div>
+<h2 class="hidden">Navigation: Site</h2>
+<ul>
+<li><a href="https://fae.cita.illinois.edu/">Run FAE</a></li>
+
+</ul>
+</div>
+
+
+<div>
+<h2 class="hidden">Navigation: Report Types</h2>
+<ul>
+<li class="highlight"><a href="https://fae.cita.illinois.edu/report/14bdd95cda5f2404/summary/">Summary Report</a></li>
+
+<li><a href="https://fae.cita.illinois.edu/report/14bdd95cda5f2404/page/1/nav/">Page Report</a></li>
+
+</ul>
+</div>
+
+ 
+
+
+
+
+
+ 
+</div>
+
+<!-- main content -->
+<div id="main">
+
+<h1>Summary Report</h1><div id="context">
+  <table cellpadding="0" cellspacing="0">
+    <tbody><tr>
+      <td class="context-1 headline">DHTML Report</td>
+      <td class="context-2 headline">2015-03-02 21:02</td>
+    </tr>
+    <tr>
+      <td class="context-1" colspan="2">DHTML: Y<span class="context">Ruleset: 1011-1 (current)</span></td>
+    </tr>
+    <tr>
+      <td colspan="2">
+                      URL: Unspecified</td>
+    </tr>
+  </tbody></table>
+</div><table class="summary" summary="Aggregated rules evaluation results by HTML Best Practices main categories." cellpadding="0" cellspacing="0">
+  <caption style="padding-top: 1em">Evaluation Results by Best Practices Main Category</caption>
+  <tbody><tr>
+    <th id="t1c0" class="category">Category</th>
+    <th id="t1c1" class="status">Status <sup><a href="#status">1</a></sup></th>
+    <th id="t1c2" class="pass"><span class="pct">%</span> Pass</th>
+    <th id="t1c3" class="warn"><span class="pct">%</span> Warn</th>
+    <th id="t1c4" class="fail"><span class="pct">%</span> Fail</th>
+  </tr>
+  <tr>
+    <th id="t1s1">
+      <a href="https://fae.cita.illinois.edu/report/14bdd95cda5f2404/page/1/nav/">Navigation &amp; Orientation</a>
+    </th>
+    <td headers="t1s1 t1c1" class="status">
+      <span class="stat-2">Almost Complete</span>
+    </td>
+    <td headers="t1s1 t1c2" class="pct">88</td>
+    <td headers="t1s1 t1c3" class="pct">11</td>
+    <td headers="t1s1 t1c4" class="pct">0</td>
+  </tr>
+  <tr class="highlight">
+    <th id="t1s2">
+      <a href="https://fae.cita.illinois.edu/report/14bdd95cda5f2404/page/1/text/">Text Equivalents</a>
+    </th>
+    <td headers="t1s2 t1c1" class="status">
+      <span class="stat-1">Complete</span>
+    </td>
+    <td headers="t1s2 t1c2" class="pct">100</td>
+    <td headers="t1s2 t1c3" class="pct">0</td>
+    <td headers="t1s2 t1c4" class="pct">0</td>
+  </tr>
+  <tr>
+    <th id="t1s3">
+      <a href="https://fae.cita.illinois.edu/report/14bdd95cda5f2404/page/1/auto/">Scripting</a>
+    </th>
+    <td headers="t1s3 t1c1" class="status">
+      <span class="stat-1">Complete</span>
+    </td>
+    <td headers="t1s3 t1c2" class="pct">100</td>
+    <td headers="t1s3 t1c3" class="pct">0</td>
+    <td headers="t1s3 t1c4" class="pct">0</td>
+  </tr>
+  <tr class="highlight">
+    <th id="t1s4">
+      <a href="https://fae.cita.illinois.edu/report/14bdd95cda5f2404/page/1/style/">Styling</a>
+    </th>
+    <td headers="t1s4 t1c1" class="status">
+      <span class="stat-2">Almost Complete</span>
+    </td>
+    <td headers="t1s4 t1c2" class="pct">83</td>
+    <td headers="t1s4 t1c3" class="pct">16</td>
+    <td headers="t1s4 t1c4" class="pct">0</td>
+  </tr>
+  <tr>
+    <th id="t1s5">
+      <a href="https://fae.cita.illinois.edu/report/14bdd95cda5f2404/page/1/std/">HTML Standards</a>
+    </th>
+    <td headers="t1s5 t1c1" class="status">
+      <span class="stat-1">Complete</span>
+    </td>
+    <td headers="t1s5 t1c2" class="pct">100</td>
+    <td headers="t1s5 t1c3" class="pct">0</td>
+    <td headers="t1s5 t1c4" class="pct">0</td>
+  </tr>
+</tbody></table><div class="table-note">Note: % Pass includes N/A results.</div><table class="summary detail" summary="Aggregated rules evaluation results by HTML Best Practices subcategories." cellpadding="0" cellspacing="0">
+  <caption style="padding-top: 1.5em">Evaluation Results by Best Practices Subcategory</caption>
+  <tbody><tr>
+    <th id="t2c0" class="category">Category/Subcategory</th>
+    <th id="t2c1" class="pass"><span class="pct">%</span> Pass</th>
+    <th id="t2c2" class="warn"><span class="pct">%</span> Warn</th>
+    <th id="t2c3" class="fail"><span class="pct">%</span> Fail</th>
+  </tr>
+  <tr>
+    <th id="t2s1" class="section" colspan="4">Navigation &amp; Orientation</th>
+  </tr>
+  <tr class="highlight">
+    <th id="t2s1r1" class="row-header">
+      <a href="https://fae.cita.illinois.edu/report/14bdd95cda5f2404/page/1/nav/#titles">Titles (title &amp; h1)</a>
+    </th>
+    <td headers="t2s1 t2s1r1 t2c1" class="pct">85</td>
+    <td headers="t2s1 t2s1r1 t2c2" class="pct">14</td>
+    <td headers="t2s1 t2s1r1 t2c3" class="pct">0</td>
+  </tr>
+  <tr>
+    <th id="t2s1r2" class="row-header">
+      <a href="https://fae.cita.illinois.edu/report/14bdd95cda5f2404/page/1/nav/#subheadings">Subheadings (h2..h6)</a>
+    </th>
+    <td headers="t2s1 t2s1r2 t2c1" class="pct">100</td>
+    <td headers="t2s1 t2s1r2 t2c2" class="pct">0</td>
+    <td headers="t2s1 t2s1r2 t2c3" class="pct">0</td>
+  </tr>
+  <tr class="highlight">
+    <th id="t2s1r3" class="row-header">
+      <a href="https://fae.cita.illinois.edu/report/14bdd95cda5f2404/page/1/nav/#nav-bars">Navigation Bars</a>
+    </th>
+    <td headers="t2s1 t2s1r3 t2c1" class="pct">66</td>
+    <td headers="t2s1 t2s1r3 t2c2" class="pct">33</td>
+    <td headers="t2s1 t2s1r3 t2c3" class="pct">0</td>
+  </tr>
+  <tr>
+    <th id="t2s1r4" class="row-header">
+      <a href="https://fae.cita.illinois.edu/report/14bdd95cda5f2404/page/1/nav/#form-labels">Form Control Labels</a>
+    </th>
+    <td headers="t2s1 t2s1r4 t2c1" class="pct">100</td>
+    <td headers="t2s1 t2s1r4 t2c2" class="pct">0</td>
+    <td headers="t2s1 t2s1r4 t2c3" class="pct">0</td>
+  </tr>
+  <tr class="highlight">
+    <th id="t2s1r5" class="row-header">
+      <a href="https://fae.cita.illinois.edu/report/14bdd95cda5f2404/page/1/nav/#data-tables">Data Tables</a>
+    </th>
+    <td headers="t2s1 t2s1r5 t2c1" class="pct">100</td>
+    <td headers="t2s1 t2s1r5 t2c2" class="pct">0</td>
+    <td headers="t2s1 t2s1r5 t2c3" class="pct">0</td>
+  </tr>
+  <tr>
+    <th id="t2s1r6" class="row-header">
+      <a href="https://fae.cita.illinois.edu/report/14bdd95cda5f2404/page/1/nav/#language">Default Language</a>
+    </th>
+    <td headers="t2s1 t2s1r6 t2c1" class="pct">100</td>
+    <td headers="t2s1 t2s1r6 t2c2" class="pct">0</td>
+    <td headers="t2s1 t2s1r6 t2c3" class="pct">0</td>
+  </tr>
+  <tr class="highlight">
+    <th id="t2s1r7" class="row-header">
+      <a href="https://fae.cita.illinois.edu/report/14bdd95cda5f2404/page/1/nav/#accesskey">Access Keys</a>
+    </th>
+    <td headers="t2s1 t2s1r7 t2c1" class="pct">0</td>
+    <td headers="t2s1 t2s1r7 t2c2" class="pct">100</td>
+    <td headers="t2s1 t2s1r7 t2c3" class="pct">0</td>
+  </tr>
+  <tr>
+    <th id="t2s1r8" class="row-header">
+      <a href="https://fae.cita.illinois.edu/report/14bdd95cda5f2404/page/1/nav/#frames">Frames</a>
+    </th>
+    <td headers="t2s1 t2s1r8 t2c1" class="pct">100</td>
+    <td headers="t2s1 t2s1r8 t2c2" class="pct">0</td>
+    <td headers="t2s1 t2s1r8 t2c3" class="pct">0</td>
+  </tr>
+  <tr>
+    <th id="t2s2" class="section" colspan="4">Text Equivalents</th>
+  </tr>
+  <tr class="highlight">
+    <th id="t2s2r1" class="row-header">
+      <a href="https://fae.cita.illinois.edu/report/14bdd95cda5f2404/page/1/text/#text01">Informative Images</a>
+    </th>
+    <td headers="t2s2 t2s2r1 t2c1" class="pct">100</td>
+    <td headers="t2s2 t2s2r1 t2c2" class="pct">0</td>
+    <td headers="t2s2 t2s2r1 t2c3" class="pct">0</td>
+  </tr>
+  <tr>
+    <th id="t2s2r2" class="row-header">
+      <a href="https://fae.cita.illinois.edu/report/14bdd95cda5f2404/page/1/text/#text02">Decorative Images</a>
+    </th>
+    <td headers="t2s2 t2s2r2 t2c1" class="pct">100</td>
+    <td headers="t2s2 t2s2r2 t2c2" class="pct">0</td>
+    <td headers="t2s2 t2s2r2 t2c3" class="pct">0</td>
+  </tr>
+  <tr class="highlight">
+    <th id="t2s2r3" class="row-header">
+      <a href="https://fae.cita.illinois.edu/report/14bdd95cda5f2404/page/1/text/#text03">Image Maps</a>
+    </th>
+    <td headers="t2s2 t2s2r3 t2c1" class="pct">100</td>
+    <td headers="t2s2 t2s2r3 t2c2" class="pct">0</td>
+    <td headers="t2s2 t2s2r3 t2c3" class="pct">0</td>
+  </tr>
+  <tr>
+    <th id="t2s3" class="section" colspan="4">Scripting</th>
+  </tr>
+  <tr class="highlight">
+    <th id="t2s3r1" class="row-header">
+      <a href="https://fae.cita.illinois.edu/report/14bdd95cda5f2404/page/1/auto/#auto01">onclick</a>
+    </th>
+    <td headers="t2s3 t2s3r1 t2c1" class="pct">100</td>
+    <td headers="t2s3 t2s3r1 t2c2" class="pct">0</td>
+    <td headers="t2s3 t2s3r1 t2c3" class="pct">0</td>
+  </tr>
+  <tr>
+    <th id="t2s3r2" class="row-header">
+      <a href="https://fae.cita.illinois.edu/report/14bdd95cda5f2404/page/1/auto/#auto02">onmouseover &amp; onmouseout</a>
+    </th>
+    <td headers="t2s3 t2s3r2 t2c1" class="pct">100</td>
+    <td headers="t2s3 t2s3r2 t2c2" class="pct">0</td>
+    <td headers="t2s3 t2s3r2 t2c3" class="pct">0</td>
+  </tr>
+  <tr>
+    <th id="t2s4" class="section" colspan="4">Styling</th>
+  </tr>
+  <tr class="highlight">
+    <th id="t2s4r1" class="row-header">
+      <a href="https://fae.cita.illinois.edu/report/14bdd95cda5f2404/page/1/style/#style01">Text Styling</a>
+    </th>
+    <td headers="t2s4 t2s4r1 t2c1" class="pct">80</td>
+    <td headers="t2s4 t2s4r1 t2c2" class="pct">20</td>
+    <td headers="t2s4 t2s4r1 t2c3" class="pct">0</td>
+  </tr>
+  <tr>
+    <th id="t2s4r2" class="row-header">
+      <a href="https://fae.cita.illinois.edu/report/14bdd95cda5f2404/page/1/style/#style02">Layout Tables</a>
+    </th>
+    <td headers="t2s4 t2s4r2 t2c1" class="pct">100</td>
+    <td headers="t2s4 t2s4r2 t2c2" class="pct">0</td>
+    <td headers="t2s4 t2s4r2 t2c3" class="pct">0</td>
+  </tr>
+  <tr>
+    <th id="t2s5" class="section" colspan="4">HTML Standards</th>
+  </tr>
+  <tr class="highlight">
+    <th id="t2s5r1" class="row-header">
+      <a href="https://fae.cita.illinois.edu/report/14bdd95cda5f2404/page/1/std/#w3c-specs">W3C Specifications</a>
+    </th>
+    <td headers="t2s5 t2s5r1 t2c1" class="pct">100</td>
+    <td headers="t2s5 t2s5r1 t2c2" class="pct">0</td>
+    <td headers="t2s5 t2s5r1 t2c3" class="pct">0</td>
+  </tr>
+</tbody></table><div class="table-note">Note: % Pass includes N/A results.</div><div id="legend">
+  <br>
+  <a name="status">
+  <p>
+    <sup>1</sup>
+    <strong>Status Value Definitions</strong>
+  </p>
+  <div style="margin-top: -1em; margin-bottom: 1em;">Status values are 
+based on aggregated evaluation results of Pass, N/A (not applicable) and
+ Warn, as defined in the following table.</div>
+  <table class="legend" summary="Definitions of Status values, which are assigned to Best Practices main categories in the first Evaluation Results table above." cellpadding="0" cellspacing="0">
+    <thead>
+      <tr class="highlight">
+        <th>Value</th>
+        <th class="pct">Percent</th>
+        <th class="eval">Result</th>
+      </tr>
+    </thead>
+    <tbody><tr>
+      <td class="stat-1">Complete</td>
+      <td class="pct">100</td>
+      <td class="eval">Pass + N/A</td>
+    </tr>
+    <tr class="highlight">
+      <td class="stat-2">Almost Complete</td>
+      <td class="pct">95–100</td>
+      <td class="eval">Pass + N/A + Warn</td>
+    </tr>
+    <tr>
+      <td class="stat-3">Partially Implemented</td>
+      <td class="pct">40–94</td>
+      <td class="eval">Pass + N/A + Warn</td>
+    </tr>
+    <tr class="highlight">
+      <td class="stat-4">Not Implemented</td>
+      <td class="pct">0–39</td>
+      <td class="eval">Pass + N/A + Warn</td>
+    </tr>
+  </tbody></table>
+</a></div><a name="status">
+
+
+</a></div><a name="status">
+<!-- footer -->
+</a><div id="footer"><a name="status">
+<hr>
+Copyright © 2005–2015, University of Illinois.  All rights reserved.
+<span class="separator">|</span><a href="mailto:fae@cita.illinois.edu">Contact Us</a>
+<span class="separator">|</span></a><a href="http://www.vpaa.uillinois.edu/policies/web_privacy.asp?bch=1">Privacy Policy</a>
+<span class="separator">|</span><a href="https://fae.cita.illinois.edu/about/disclaimer/">Disclaimer</a>
+
+</div>
+
+
+
+</body></html>
