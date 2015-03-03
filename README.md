@@ -46,6 +46,7 @@ Para mejorar la Accesibilidad
 * Imágenes y texto para los enlaces.
 * distancia mínima de contraste 3:1
 * ==>Se puede navegar completamente solo con tabulador e intro no necesita ratón
+* se pueden usar atajos de teclado con las letras subrayadas alt+shift+TECLA en firefox
 
 Adornitos:
 * icono favicon  para distinguirlo de otras pestañas.

@@ -147,6 +147,7 @@ a.objetivo{
 #mas{
     background:black;
     display:none;
+    cursor: cell;
 }
 #mas a{
     color:white;
