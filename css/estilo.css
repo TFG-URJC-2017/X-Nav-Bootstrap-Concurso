@@ -144,6 +144,12 @@ a.objetivo{
 #ADIE, #ADIEPanel{
      background:  #fed88f;
 }
+@media (min-width: 768px) {
+    .centered{
+       margin-left:25%;
+       margin-right:0;
+    }
+}
 #UNIR, #UNIRPanel{
      background:  #eee ;
 }
@@ -206,8 +212,6 @@ color:white;
     width: 100px;
     height:100px
 }
-
-
 #Premios{
         padding-bottom:20%;
 }
