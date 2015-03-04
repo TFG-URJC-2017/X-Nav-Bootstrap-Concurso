@@ -17,31 +17,33 @@ web resultante. El resultado no debería dar errores en <a href="http://blog.get
 
 ## Cosas que implementa.
 Estilo minimalista:
-* Solo colores y tipografías claras
-* Poco texto en cada pantalla
-* Pantallas mono-temáticas sin necesidad de scroll
-* Aplicados principios de  psicología del color en las secciones.
+* Solo colores y tipografías claras.
+* Poco texto en cada pantalla.
+* Pantallas mono-temáticas sin necesidad de scroll, la información de cada sección  ocupa una pantalla. 
+* Aplicados principios de  psicología del color en las secciones y juegos de contraste.
+* contenidos centrados.
 
 Diseño para móviles:
 * La web se ve como una aplicación casi nativa en los móviles en vertical.
 
-Para mejorar SEO:
-* Un solo h1 en el documento, 
-* mas texto que etiquetas,
-* pocas imágenes para que la carga sea rápida
+Diseño para impresion:
+* La web se puede imprimir o ver como si se fuese a imprimir.   archivo->vista preliminar
 
+Para mejorar SEO:
+* Un solo h1 en el documento.
+* todo el texto en el html
+* pocas imágenes para que la carga sea rápida.
 
 Para mejora de navegación
-* title y h1 con texto similar
-* etiquetas escalonadas
-* uso de etiquetas semanticas
+* title y h1 con texto similar.
+* etiquetas escalonadas.
+* uso de etiquetas semanticas.
 
 Para mejorar la Accesibilidad
 * Enlaces con title  para saber que  harán.
 * fotos con etiqueta alt descriptiva, favorece a los lectores de pantalla.
 * strong para poner énfasis negrita en vez de b.
 * menú siempre en la misma posición.
-* información de cada sección  ocupa una pantalla. 
 * saltos facilitados por etiquetas a sin texto.
 * Imágenes y texto para los enlaces.
 * distancia mínima de contraste 3:1
@@ -50,12 +52,15 @@ Para mejorar la Accesibilidad
 
 Adornitos:
 * icono favicon  para distinguirlo de otras pestañas.
-* icono en las pestañas cambia si estas están desplegadas.
-
+* el icono en las pestañas cambia si estas están desplegadas.
+* efecto shake  en el icono de premios de google.
+* efecto zoom  sobre las fotos de los miembros.
+* contracion de las las pestañas  bajo signo mas en modo movil (contribuciones).
 
 Cosas a seguir mejorando:
 * Implementar botón para navegación automática: Posibilidad de añadir archivo de audio para navegación narrada. 
 * Crear versión ligera de css y jss. (no implementada por claridad)
 * Descubrir como solucionar tema de etiquetas h1 o h2 antes de ul.
-* Averiguar forma de generar otra imagen de miniatura para navegadores
 * Como solo se los github de Gregorio y Baradona son los únicos que enlazan los demás apuntan a "#"
+* En caso de tenere logo poner logo estilo minimalista o flat.
+* Agregar algunos iconos minimalistas o de efecto negativo al background (no encontre diseños que me convenciesen)

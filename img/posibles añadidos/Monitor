@@ -1,0 +1,290 @@
+<!doctype html>
+<html
+    lang="en-US" id="app" ng-controller="RootCtrl"
+    ng-class="{'show-left-sidebar': sideBars.leftActive, 'show-right-sidebar': sideBars.rightActive}"
+    class=""
+    xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+<meta charset="utf-8"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0,minimum-scale=1.0">
+<meta name="fragment" content="!" />
+
+<!-- Prerender tags -->
+<meta name="prerender-status-code" content="{{statusCode}}">
+<script> window.prerenderReady = false; </script>
+
+<!-- Twitter tags -->
+<meta name="twitter:card"         content="photo">
+<meta name="twitter:site"         content="@icons_8">
+<meta name="twitter:url"          content="http://icons8.com/web-app" ng-attr-content="{{seo.url}}">
+<meta name="twitter:title"        content="Your sexy icon slave delivers any icon in 20 sec in any color, size, and format" ng-attr-content="{{seo.title}}">
+<meta name="twitter:image"        content="http://cdnd.icons8.com/download/mail/webapp.png" ng-attr-content="{{seo.preview}}" ng-if="seo.preview">
+<meta name="twitter:image:width"  content="256" ng-if="seo.preview">
+<meta name="twitter:image:height" content="256" ng-if="seo.preview">
+
+<!-- OG tags (facebook, google) -->
+<meta property="og:url"             content="http://icons8.com/web-app" ng-attr-content="{{seo.url}}">
+<meta property="og:title"           content="Icons8 Web App" ng-attr-content="{{seo.title}}">
+<meta property="og:image"           content="http://cdnd.icons8.com/download/mail/webapp.png" ng-attr-content="{{seo.preview}}" ng-if="seo.preview">
+<meta property="og:description"     content="Your sexy icon slave delivers any icon in 20 sec in any color, size, and format" ng-attr-content="{{seo.description}}">
+<meta property="og:site_name"       content="Icons8"/>
+<meta property="og:image:type"      content="image/png" ng-if="seo.preview">
+<meta property="og:image:width"     content="256" ng-if="seo.preview">
+<meta property="og:image:height"    content="256" ng-if="seo.preview">
+
+
+<!-- VK tags -->
+<link rel="image_src" href="http://cdnd.icons8.com/download/mail/webapp.png" ng-attr-href="{{seo.preview}}" ng-if="seo.preview">
+
+<meta name="title"       content="Icons8 - 8800+ icons + Icon Tools" ng-attr-content="{{seo.title}}">
+<meta name="description" content="Your sexy icon slave delivers any icon in 20 sec in any color, size, and format" ng-attr-content="{{seo.description}}">
+<link rel="canonical"    ng-attr-href="{{seo.canonical}}" ng-if="seo.canonical" />
+
+<meta name="description" content="Icons" />
+<link rel="shortcut icon" type="image/x-icon" href="http://cdnst.icons8.com/favicon.ico" />
+<link title="RSS 2.0" rel="alternate" type="application/rss+xml" href="http://icons8.com/feed/" />
+<link title="RSS .92" rel="alternate" type="text/xml" href="http://icons8.com/feed/rss/" />
+<link title="Atom 0.3" rel="alternate" type="application/atom+xml" href="http://icons8.com/feed/atom/" />
+<link rel="pingback" href="http://icons8.com/xmlrpc.php" />
+<title ng-bind-template="{{seo.title}}">Icons8 - 8800+ icons + Icon Tools</title>
+
+
+<base href="/web-app/"/>    <link rel="stylesheet" href="http://cdnst.icons8.com/build/web-app/css/app.css?u=1425320591"/></head>
+
+<body itemscope itemtype="http://schema.org/WebSite">
+<meta itemprop="name" content="Icons8"/>
+<meta itemprop="url" content="http://icons8.com"/>
+
+
+  <nav class="site-header" ng-controller="NavCtrl" itemscope itemtype="http://www.schema.org/WPHeader">
+
+  <label class="site-nav__toggle" for="nav-toggle">Menu</label>
+
+  <span itemscope itemtype="http://www.schema.org/SiteNavigationElement">
+  <a class="site-title" href="http://icons8.com" itemprop="url">
+    <svg class="site-title__logo" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+         viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve">
+      <g>
+        <path d="M8.8,14.7c0-0.4,0.1-0.6,0.4-0.9c0.2-0.2,0.5-0.3,0.9-0.3c0.4,0,0.7,0.1,0.9,0.3c0.2,0.2,0.4,0.5,0.4,0.9
+          c0,0.4-0.1,0.7-0.4,0.9c-0.2,0.2-0.5,0.3-0.9,0.3c-0.4,0-0.7-0.1-0.9-0.3C8.9,15.4,8.8,15.1,8.8,14.7z M10,12
+          c0.3,0,0.5-0.1,0.7-0.2c0.2-0.2,0.3-0.4,0.3-0.7c0-0.3-0.1-0.5-0.3-0.7c-0.2-0.2-0.4-0.2-0.7-0.2c-0.3,0-0.5,0.1-0.7,0.2
+          C9.1,10.6,9,10.8,9,11.1c0,0.3,0.1,0.5,0.3,0.7C9.5,12,9.7,12,10,12z M2,6h16l-2.5,13.4C15.4,19.7,15,20,14.6,20H5.4
+          c-0.4,0-0.8-0.3-0.8-0.6L2,6z M8.6,12.7L8.6,12.7c-0.4,0.1-0.8,0.4-1.1,0.7c-0.3,0.3-0.4,0.8-0.4,1.3c0,0.4,0.1,0.7,0.2,1
+          C7.5,16,7.7,16.3,8,16.5c0.2,0.2,0.5,0.4,0.9,0.5c0.3,0.1,0.7,0.2,1.1,0.2c0.4,0,0.8-0.1,1.1-0.2c0.3-0.1,0.6-0.3,0.9-0.5
+          c0.2-0.2,0.4-0.5,0.6-0.8c0.1-0.3,0.2-0.7,0.2-1c0-0.5-0.1-0.9-0.4-1.3c-0.3-0.3-0.6-0.6-1.1-0.7v0c0.4-0.1,0.6-0.3,0.8-0.6
+          c0.2-0.3,0.3-0.6,0.3-1c0-0.7-0.2-1.2-0.6-1.6c-0.4-0.4-1-0.6-1.8-0.6S8.6,9.1,8.2,9.5c-0.4,0.4-0.6,0.9-0.6,1.6
+          c0,0.4,0.1,0.7,0.3,1C8,12.3,8.3,12.6,8.6,12.7z M16.7,1.7h-0.5L16,1c-0.2-0.6-0.7-1-1.4-1H5.3C4.7,0,4.2,0.4,4,1L3.8,1.7H3.3
+          C2,1.7,1,2.7,1,4v1h18V4C19,2.7,18,1.7,16.7,1.7z"/>
+      </g>
+    </svg>
+  </a>
+  </span>
+
+  <ul class="site-nav">
+
+  <li class="site-nav__item " itemscope itemtype="http://www.schema.org/SiteNavigationElement">
+    <a class="site-nav__link active" href="http://icons8.com/{{appUrl}}" itemprop="url">
+      <span itemprop="name">Web App <span class="site-nav__tag">beta</span></span>
+    </a>
+  </li>
+
+  <li class="site-nav__item " itemscope itemtype="http://www.schema.org/SiteNavigationElement">
+    <a class="site-nav__link" href="http://icons8.com/app/" itemprop="url">
+      <span itemprop="name">App for Windows <span class="site-nav__tag">free</span></span>
+    </a>
+  </li>
+
+  <li class="site-nav__item dropdown dropdown-toggle ">
+    <span class="site-nav__link">
+      Icon Packs
+    </span>
+    <ul class="site-nav dropdown-menu">
+      <li class="site-nav__item" itemscope itemtype="http://www.schema.org/SiteNavigationElement">
+        <a class="site-nav__link" itemprop="url" href="http://icons8.com/download-huge-windows8-set/">
+          <span itemprop="name">Windows 8</span>
+        </a>
+      </li>
+      <li class="site-nav__item" itemscope itemtype="http://www.schema.org/SiteNavigationElement">
+        <a class="site-nav__link" itemprop="url" href="http://icons8.com/free-ios-7-icons-in-vector/">
+          <span itemprop="name">iOS 8</span>
+        </a>
+      </li>
+      <li class="site-nav__item" itemscope itemtype="http://www.schema.org/SiteNavigationElement">
+        <a class="site-nav__link" itemprop="url" href="http://icons8.com/android-L/">
+          <span itemprop="name">Android Lollipop</span>
+        </a>
+      </li>
+      <li class="site-nav__item" itemscope itemtype="http://www.schema.org/SiteNavigationElement">
+        <a class="site-nav__link" itemprop="url" href="http://icons8.com/android-icons/">
+          <span itemprop="name">Android Kitkat</span>
+        </a>
+      </li>
+    </ul>
+  </li>
+
+  <li class="site-nav__item " itemscope itemtype="http://www.schema.org/SiteNavigationElement">
+    <a class="site-nav__link"  itemprop="url" href="http://icons8.com/paid-license-99/">
+      <span itemprop="name">Buy</span>
+    </a>
+  </li>
+
+  <li class="site-nav__item" itemscope itemtype="http://www.schema.org/SiteNavigationElement">
+    <a class="site-nav__link" itemprop="url" href="http://buzz.icons8.com/forums/136215-request-icons/">
+      <span itemprop="name">Ideas&Votes</span>
+    </a>
+  </li>
+
+  
+  <!-- Panel tabs -->
+  <li class="site-nav__item site-nav__panel-tabs">
+    <span class="site-nav__link"
+          ng-click="toggleRightSidebar('icon')"
+          ng-class="{'active-tab': sideBars.right.active && sideBars.right.template == 'icon'}">
+      Icon
+    </span>
+    <span class="site-nav__link"
+          ng-click="toggleRightSidebar('light-box')"
+          ng-class="{'active-tab': sideBars.right.active && sideBars.right.template == 'light-box'}">
+      Collections
+    </span>
+  </li>
+
+      <li class="site-nav__item site-nav__item--right">
+      <span class="site-nav__link"
+            onclick="location.href = '/login/?back=' + app.auth.getRedirectUrl(); return false;"
+         href="/login/?back=">Login</span>
+    </li>
+  
+  </ul>
+</nav>
+  <div class="side-bar side-bar--right side-bar--header active"
+       ng-show="sideBars.right.active"
+       ng-class="{active: sideBars.right.active,
+             'side-bar--footer': sideBars.right.template != 'icon'}">
+    <div ng-show="sideBars.right.template == 'icon'" ng-include="'template-icon.html'"></div>
+    <div ng-show="sideBars.right.template != 'icon'" ng-include="'template-light-box.html'"></div>
+  </div>
+
+
+  <main role="main"
+        ng-class="{
+            'show-left-sidebar': sideBars.left.active,
+            'show-right-sidebar': sideBars.right.active
+        }">
+
+    <div class="app-panel" ng-controller="AppPanelCtrl"
+         ng-include="'template-app-panel.html'"></div>
+
+    <div drop-action="$item.remove()" drop-type="fromLightBox" style="position: absolute; top: 48px; left: 0; right: 0; bottom: 0;">
+	<div class="page" ng-view></div>
+</div>
+
+<!-- Template with toasts -->
+<script type="text/ng-template" id="template-toast.html">
+  <div ng-cloak class="toast-container" ng-controller="ToastsCtrl">
+  <div class="toast" ng-repeat="toast in toasts | reverse">
+    <div class="toast__text" ng-bind="toast.content"></div>
+  </div>
+<!--  <div class="toast">-->
+<!--    <div class="toast__text">Wow, some toast here!</div>-->
+<!--  </div>-->
+</div></script>
+
+  </main>
+
+
+
+  <div class="side-bar side-bar--left active"
+       ng-controller="LeftSideBarCtrl"
+       ng-class="{active: sideBars.left.active}"
+       ng-include="'template-left-side-bar.html'"
+       itemscope itemtype="http://schema.org/WPSideBar"
+      ></div>
+
+
+
+  <div ng-cloak class="toast-container" ng-controller="ToastsCtrl">
+  <div class="toast" ng-repeat="toast in toasts | reverse">
+    <div class="toast__text" ng-bind="toast.content"></div>
+  </div>
+<!--  <div class="toast">-->
+<!--    <div class="toast__text">Wow, some toast here!</div>-->
+<!--  </div>-->
+</div>
+  <modals></modals>
+
+
+
+  <a href="https://plus.google.com/+Icons8" rel="publisher"></a>
+
+<script src="http://cdnst.icons8.com/build/public/packages/public-angular.js?u=1425320591"></script><script src="http://cdnst.icons8.com/build/web-app/dependencies/app.js?u=1425320591"></script>
+
+<script>
+  'use strict';
+
+  var app = {
+    appUrl: 'web-app',
+    apiUrl:  'http://api.icons8.com', // ссылка на api.icons8
+    //siteUrl:  '', // ссылка на api.icons8
+
+    auth: {
+      rights: {"execute-api-iconmeta-add-tags":true,"execute-api-iconmeta-vote-tags":true,"execute-api-lightbox-create-bitmap-zip":true,"execute-api-lightbox-recolor-bitmap":true,"execute-api-iconmeta-clean-tags":false,"execute-api-lightbox-create-vector-zip":false,"execute-api-lightbox-create-web-font":false,"execute-api-lightbox-recolor-vector":false,"execute-api-task-append-tags":false,"execute-api-task-replace-tags":false,"download-all-bitmaps-images":false,"download-bitmaps-images":true,"download-bitmaps-zip":true,"download-vectors-images":false,"download-vectors-zip":false,"nolink-icon-usage":false},        // права пользователей
+      license: {},      // лицензия пользователя
+      isGuest: true,      // гость или авторизован
+      loginUrl: '/login/?back=',  // url для логинации
+      userId: '',
+
+      // кодируем текущий url
+      getRedirectUrl: function(action) {
+        var hash = location.hash;
+        if (action) {
+          if (hash.indexOf('/action/') > -1) {
+            hash = hash.substr(0, hash.indexOf('/action/') + 8) + action;
+          } else {
+            hash += '/action/' + action;
+          }
+        }
+        return encodeURIComponent(
+          location.protocol + '//' +
+            location.hostname +
+            location.pathname +
+            location.search +
+            (hash && hash.indexOf('#!') > -1 ? '_HASH_' + hash.substr(2) : '')
+        );
+      }
+    },
+
+    iconsCount: "8800+"
+  };
+  if (!app.auth.license.features) {
+      app.auth.license.features = {
+          nolink: false,
+          updates: false,
+          vector: false
+      }
+  }
+  app.auth.license.expiry = app.auth.license.expiry*1000;
+  app.auth.license.purchased = app.auth.license.purchased*1000;
+
+  // GA tracking для обычных страниц
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-362385-8']);
+  _gaq.push(['_setDomainName', 'icons8.com']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-362385-8', 'icons8.com');
+  ga('send', 'pageview');
+</script></body>
+</html>

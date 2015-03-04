@@ -79,12 +79,11 @@ a.objetivo{
 }
  
 #Conocenos{
-    background:#f4858e;
     padding-top:5%;
     padding-bottom:5%;
     z-index: 1;
 }
-#idConocenos
+#Conocenos, #idConocenos
 {
     background:#f4858e;
 }
@@ -96,7 +95,7 @@ a.objetivo{
   padding-bottom:10px;
 }
 #drscratch, #drscratchPanel1, #drscratchPanel2, #FECyT, #FECyTPanel1, #FECyTPanel2, #FECyTPanel3 , #FECyTPanel4{
-    background:#bfe2ca;
+    background:#f4858e;
     padding-top:10px;
     padding-bottom:10px;
 }
@@ -114,6 +113,33 @@ a.objetivo{
     display:none;
     border-bottom-right-radius:8px;
     border-bottom-left-radius:8px; 
+}
+.printvisible{
+    display:none;
+}
+
+ @media print{
+    #gymkhanaPanel, #drscratchPanel1, #drscratchPanel2, #FECyTPanel1, #FECyTPanel2, #FECyTPanel3, #FECyTPanel4, #e-MadridPanel,#DojoPanel, #INTEFPanel, #CodeWeekPanel, #ADIEPanel, #UNIRPanel, #ProgramamosPanel{
+         padding-top:0;
+         display:block;
+    }
+    .printhide{
+        display:none;
+    }
+    .printvisible{
+        display:inline;
+    }
+    .item{
+        display:block;
+    }
+    .centered{
+       margin-left:0%!important;
+       margin-right:0;
+    }
+img{
+    width: 100px;
+    height:100px
+}
 }
 .textocolaboraciones{
     padding-left: 10px;
@@ -162,8 +188,6 @@ a.objetivo{
 #Programamos, #ProgramamosPanel{
     background:#a6daef;
 }
-
-
 #mas{
     background:black;
     display:none;
