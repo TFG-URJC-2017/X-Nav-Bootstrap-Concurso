@@ -31,12 +31,12 @@ Para mejorar SEO:
 * pocas imágenes para que la carga sea rápida
 
 
-Para mejora de navegación
+Para mejora de navegación:
 * title y h1 con texto similar
 * etiquetas escalonadas
 * uso de etiquetas semanticas
 
-Para mejorar la Accesibilidad
+Para mejorar la Accesibilidad:
 * Enlaces con title  para saber que  harán.
 * fotos con etiqueta alt descriptiva, favorece a los lectores de pantalla.
 * strong para poner énfasis negrita en vez de b.
@@ -56,6 +56,6 @@ Adornitos:
 Cosas a seguir mejorando:
 * Implementar botón para navegación automática: Posibilidad de añadir archivo de audio para navegación narrada. 
 * Crear versión ligera de css y jss. (no implementada por claridad)
-* Descubrir como solucionar tema de etiquetas h1 o h2 antes de ul.
+* Descubrir como solucionar tema de etiquetas h1 o h2 antes de ul.(por normativa de w3c)
 * Averiguar forma de generar otra imagen de miniatura para navegadores
 * Como solo se los github de Gregorio y Baradona son los únicos que enlazan los demás apuntan a "#"
