@@ -98,6 +98,7 @@ a.objetivo{
     background:#f4858e;
     padding-top:10px;
     padding-bottom:10px;
+    cursor:pointer;
 }
 #gymkhana, #e-Madrid,#drscratch,#FECyT{
     text-align:center;
@@ -106,6 +107,7 @@ a.objetivo{
     background:  #fed88f;
     padding-top:10px;
     padding-bottom:10px;
+    cursor:pointer;
 }
 #gymkhanaPanel, #drscratchPanel1, #drscratchPanel2, #FECyTPanel1, #FECyTPanel2, #FECyTPanel3, #FECyTPanel4, #e-MadridPanel,#DojoPanel, #INTEFPanel, #CodeWeekPanel, #ADIEPanel, #UNIRPanel, #ProgramamosPanel{
     padding-top:10px;
@@ -159,7 +161,8 @@ img{
 }
 #Programamos, #Dojo, #INTEF, #CodeWeek, #ADIE, #UNIR,#mas{
      display: table-cell;
-     height:40px
+     height:40px;
+     cursor:pointer;
 }
 #Programamos a, #Dojo a, #INTEF a, #CodeWeek a, #ADIE a, #UNIR a{
     color:black;
