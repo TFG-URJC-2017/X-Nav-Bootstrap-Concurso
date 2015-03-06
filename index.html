@@ -24,6 +24,17 @@
   <body>
 <!-- NAVBAR
 ================================================== -->
+  <a class="sr-only" href="HEADER" title="Saltar instrucciones">Saltar al menu</a>  
+  <p style="display:none;"> Si ve esto, no active ningun enlace con javascript.<br> 
+          La página ha sido diseñada para que en caso de no cargar css se pueda ver el contenido completo<br>
+              javascript alterara este funcionamiento</p>
+     
+    <p class="sr-only"> Bienvenido a la pagina  de  KGBL3, hemos intentado hacer cómoda tu navegación. 
+       El sistema de navegación entre secciones primero le ofrecerá volver a la sección anterior, 
+       mostrara el titulo de la sección en que se encuentra y le ofrecerá ir a la siguiente sección, el contenido ira después.
+       Al terminar cada sección se encontrara un enlace con el texto fin sección, ir a la siguiente, no hace hace activarlo, 
+       su propósito es permitir centrar la pagina en el nuevo contenido sin necesidad de scroll</p>
+       
     <HEADER class="navbar-wrapper" role="heading">
         <a class="sr-only" href="#Conocenos" title="Salto a contenidos">salto a contenidos</a>
         <div class="container">
@@ -71,13 +82,15 @@
     <div class="centrame">
         <h2>SOFTWARE</h2>
         <a class="sr-only" href="#Proyectos" title="siguiente">siguiente sección</a>
-        <div class="text-left">
+        <a class="sr-only" href="#drscratchPanel1" title="Saltar a descripción"> saltar a descripción de dr.Scratch</a>
+        <a class="sr-only" href="#gymkhanaPanel" title="Saltar a descripción"> saltar a descripción de gymkhana</a>
+        <div id="menu-Software" class="text-left">
            <div  id="drscratch" class="col-lg-6">
-               <a class="objetivo" href="javascript:ejecutadrscratch()" title="onclick" accesskey="d"><span id="arriba1"><span  class="glyphicon glyphicon-triangle-bottom" aria-hidden="true" ></span></span> <u>D</u>r. Scratch</a><a href="http://drscratch.programamos.es/" title="pag web de dr. Scratch">[web]</a>
-            </div> 
+               <a class="objetivo" href="javascript:ejecutadrscratch()" title="onclick" accesskey="d"><span id="arriba1"><span  class="glyphicon glyphicon-triangle-bottom" aria-hidden="true" ></span></span> <u>D</u>r. Scratch</a><a href="http://drscratch.programamos.es/" title="pag web de dr. Scratch">[web]</a>               
+            </div><a class="sr-only" href="#drscratchPanel1" title="Saltar a descripción"> saltar a descripción de dr.Scratch</a>
             <div  id="gymkhana" class="col-lg-6">
-                <a class="objetivo" href="javascript:ejecutagymkhana()" title="onclick" accesskey="l"><span id="arriba2"><span  class="glyphicon glyphicon-triangle-bottom" aria-hidden="true" ></span></span> <u>L</u>ibreSoft Gymkhana</a> <a href="http://gymkhana.libresoft.es/" title="web de gymkana">[web]</a>
-            </div> 
+                <a class="objetivo" href="javascript:ejecutagymkhana()" title="onclick" accesskey="l"><span id="arriba2"><span  class="glyphicon glyphicon-triangle-bottom" aria-hidden="true" ></span></span> <u>L</u>ibreSoft Gymkhana</a><a href="http://gymkhana.libresoft.es/" title="web de gymkana">[web]</a>
+            </div><a class="sr-only" href="#gymkhanaPanel" title="Saltar a descripción"> saltar a descripción de gymkhana</a> 
             <div id="mensaje" class="col-lg-12 mensaje printhide">  
                 <p class="centrame">
                       <i class="fa fa-hand-o-up"></i> Activa las pestañas para mas información.
@@ -89,11 +102,12 @@
             </div><div id="drscratchPanel2" class="col-lg-12">    
                 La plataforma incluye técnicas de ludificación (gamification), de manera que el alumno puede ganar medallas y desarrollar sus habilidades de programación y alcanzar niveles de mayor complejidad y calidad. Dentro del proyecto se realizarán actividades específicamente orientadas al fomento de la programación para chicas, colectivos desfavorecidos y discapacitados.
                 <span class="printhide"><br><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>[2|2]</span><br><br class="printvisible">
-            </div>           
+            </div>        
             <div id="gymkhanaPanel" class="col-lg-12">
-                 gymkhana: Es un juego educativo y geologalizado de código abierto para aprendizaje y aplicaciones de turismo. Esta basado en la aplicación LibreGeoSocial mobile social network application,que incluye una interfaz de realidad aumentada.Se puede controlar y organizar una gymkana desde un móvil Android(new generation gymkhanas) sin gran esfuerzo.
+                 gymkhana: Es un juego educativo y geolocalizado de código abierto para aprendizaje y aplicaciones de turismo. Esta basado en la aplicación LibreGeoSocial mobile social network application,que incluye una interfaz de realidad aumentada.Se puede controlar y organizar una gymkana desde un móvil Android(new generation gymkhanas) sin gran esfuerzo.
                  <span class="printhide"><br><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span></span><br>
              </div>
+           <a class="sr-only" href="#menu-Software" title="Saltar a descripción">si esta aquí sin haber podido conseguir la descripción que deseaba, active este enlace  y ejecute a continuación el enlace que quiera ver</a>
         </div>
     </div>
     <a class="sr-only" href="#Proyectos" title="siguiente">fin sección, ir a la siguiente</a>
@@ -105,13 +119,15 @@
     <div class="centrame">
         <h2>PROYECTOS</h2>
         <a class="sr-only" href="#Colaboraciones" title="siguiente">siguiente sección</a>   
-        <div class="text-left">
+        <a class="sr-only" href="#e-MadridPanel" title="Saltar a descripción"> saltar a descripción de e-Madrid</a>
+        <a class="sr-only" href="#FECyTPanel1" title="Saltar a descripción"> saltar a descripción de FECyT</a>
+        <div id="menu-Proyectos" class="text-left">
             <div  id="e-Madrid" class="col-lg-6">
                 <a class="objetivo" href="javascript:ejecutaeMadrid()" title="onclick" accesskey="m"><span id="arriba3"><span  class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span></span> e-<u>M</u>adrid </a><a href="http://www.emadridnet.org" title="web e-Madrid">[web]</a>
-            </div> 
+            </div><a class="sr-only" href="#e-MadridPanel" title="Saltar a descripción"> saltar a descripción de e-Madrid</a>
             <div  id="FECyT" class="col-lg-6">
                 <a class="objetivo" href="javascript:ejecutaFECyT()" title="onclick" accesskey="f"> <span id="arriba4"><span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span></span><u>F</u>ECyT</a>
-            </div> 
+            </div> <a class="sr-only" href="#FECyTPanel1" title="Saltar a descripción"> saltar a descripción de FECyT</a>
             <div id="mensaje1" class="col-lg-12 mensaje printhide">  
                 <p class="centrame">
                     <i class="fa fa-hand-o-up"></i>  Activa las pestañas para mas información.
@@ -135,6 +151,7 @@
                  <span class="printhide"><br><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>[4|4]</span><br>
             </div>
         </div>
+        <a class="sr-only" href="#menu-Proyectos" title="Saltar a descripción">si esta aquí sin haber podido conseguir la descripción que deseaba, active este enlace  y ejecute a continuación el enlace que quiera ver</a>
     </div>
     <a class="sr-only" href="#Colaboraciones" title="siguiente">fin sección, ir a la siguiente</a>   
 </div>
@@ -147,49 +164,45 @@
     <div class="centrame">  
         <h2>COLABORACIONES</h2>
         <a class="sr-only" href="#Miembros" title="siguiente">siguiente sección</a>   
-        <p class="text-left">Algunas de nuestras colaboraciones: </p>
-        <div id="Asociaciones" class="row">            
+        <p class="text-left">Algunas de nuestras colaboraciones: </p>        
+        <div id="Asociaciones" class="row">     
+            <a class="sr-only" href="#CodeWeekPanel" title="Saltar a descripción"> saltar a descripción de las colaboraciones</a>
             <div id="CodeWeek" class="col-lg-2 col-xs-4">
                 <div class="centrame">  
                     <a href="javascript:ejecutaCodeWeek()" title="información semana de la programacion" accesskey="w" ><span id="arriba5"><span  class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span></span> code<u>w</u>eek</a>
                  </div>
-            </div>
+            </div><a class="sr-only" href="#CodeWeekPanel" title="Saltar a descripción"> saltar a descripción de CodeWeek</a>
             <div id="Programamos" class="col-lg-2 col-xs-4">
                 <div class="centrame"> 
                     <a href="javascript:ejecutaProgramamos()" title=" información programamos.es" accesskey="p"><span id="arriba8"><span  class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span></span><u>P</u>rogramamos</a>
                 </div>
-            </div>
+            </div><a class="sr-only" href="#ProgramamosPanel" title="Saltar a descripción"> saltar a descripción de Programamos</a>
             <div id="Dojo" class="col-lg-2 col-xs-4 ">
                 <div class="centrame"> 
                     <a href="javascript:ejecutaDojo()" title="información Coder-Dojo Medialab Prado" accesskey="c"><span id="arriba9"><span  class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span></span><u>C</u>oder-Dojo</a>
                 </div>
-            </div>                        
+            </div><a class="sr-only" href="#DojoPanel" title="Saltar a descripción"> saltar a descripción de Coder-Dojo</a>
             <div id="ADIE" class="col-lg-2 col-xs-4">
                 <div class="centrame"> 
                     <a href="javascript:ejecutaADIE()" title="información Asociación para el Desarrollo de la Informática" accesskey="a"><span id="arriba6"><span  class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span></span><u>A</u>DIE</a>
                 </div>
-            </div>            
+            </div><a class="sr-only" href="#ADIEPanel" title="Saltar a descripción"> saltar a descripción de ADIE</a>
             <div id="UNIR" class="col-lg-2 col-xs-4">
                 <div class="centrame"> 
                     <a href="javascript:ejecutaUNIR()" title="información Universidad Internacional de la Rioja" accesskey="n"><span id="arriba7"><span  class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span></span>U<u>N</u>IR</a>
                 </div>
-            </div>                          
+            </div><a class="sr-only" href="#UNIRPanel" title="Saltar a descripción"> saltar a descripción de UNIR</a>                          
             <div id="INTEF" class="col-lg-2 col-xs-4">
                <div class="centrame">  
                    <a href="javascript:ejecutaINTEF()" title="información Instituto Nacional de Tecnologías Educativas y de Formación del Profesorado"  accesskey="i"><span id="arriba10"><span  class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span></span><u>I</u>NTEF</a>
                </div>
-           </div>   
+           </div><a class="sr-only" href="#INTEFPanel" title="Saltar a descripción"> saltar a descripción de INTEF</a>   
             <div id="mas" class="col-xs-8 printhide">
                <div class="centrame">  
                    <a href="javascript:ejecutamas()" title="desplegable de las demas pestañas">+</a>
                </div>
            </div>   
-       </div>
-       <div id="mensaje2" class="row mensaje printhide">
-           <p class="centrame">
-                  <i class="fa fa-hand-o-up"></i> Activa las pestañas para mas información. 
-           </p>           
-       </div>  
+       </div>       
        <br class="printvisible">
        <div class="text-left">
            <div id="CodeWeekPanel" class="row textocolaboraciones">
@@ -216,7 +229,13 @@
                 <p>INTEF: Instituto Nacional de Tecnologías Educativas y de Formación del Profesorado<a href="http://www.ite.educacion.es/">[web]</a>:<br>Dependiente del Ministerio de Educación, Cultura y Deporte. Entre nuestras aportaciones están: impartir cursos de formación en pensamiento computacional para profesores, cursos de verano o cursos de formación on-line.</p>
                 <span class="printhide"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span></span>
             </div>
-        </div>
+             <a class="sr-only" href="#Asociaciones" title="Saltar a descripción">si esta aquí sin haber podido conseguir la descripción que deseaba, active este enlace  y ejecute a continuación el enlace que quiera ver</a>
+        </div>  
+         <div id="mensaje2" class="row mensaje printhide">
+           <p class="centrame">
+                  <i class="fa fa-hand-o-up"></i> Activa las pestañas para mas información. 
+           </p>           
+       </div>   
     </div>    
     <a class="sr-only" href="#Miembros" title="siguiente">fin sección, ir a la siguiente</a>  
 </SECTION>
@@ -228,8 +247,9 @@
         <a class="sr-only" href="#Colaboraciones" title="anterior">anterior sección</a>         
         <h2>EL EQUIPO</h2>
         <a class="sr-only" href="#Premios" title="siguiente">siguiente sección</a>
-        <p>Somo<u>s</u> un grupo de investigación<span class="hidden-xs"> de la URJC:</span><br>
+        <p><u>S</u>omos un grupo de investigación<span class="hidden-xs"> de la URJC:</span><br>
         <span class="visible-xs">Cinco profesores, dos doctorandos, una docena de alumnos de máster y grado de la URJC:</span></p> 
+        <p style="display:none;"> Los nombre permiten acceder a los repositorios de github de los miembros</p>
         <div class="row-fluid printhide">
             <div id="myCarousel" class="carousel slide">
                 <ol class="carousel-indicators">
@@ -386,6 +406,8 @@
     </div>
     <a class="sr-only" href="#Premios" title="siguiente"> fin sección, ir a la siguiente,salto recomendado</a>
 </SECTION>
+<p style="display:none;"> Este contenido solo tiene proposito para servicios de impresión,contiene la informacion duplicada de los miembros </p>
+<a class="sr-only" href="#Premios" title="siguiente"> ir a la siguiente sección,salto recomendado</a>
 <div class="printvisible">
                    <div class="col-lg-6">
                    <h3 >Gregorio Robles </h3>
