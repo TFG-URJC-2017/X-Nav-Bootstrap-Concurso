@@ -21,49 +21,50 @@ Estilo minimalista:
 * Poco texto en cada pantalla.
 * Pantallas mono-temáticas sin necesidad de scroll, la información de cada sección  ocupa una pantalla. 
 * Aplicados principios de  psicología del color en las secciones y juegos de contraste.
-* contenidos centrados.
+* Contenidos centrados.
+
+Para mejorar SEO:
+* Un solo h1 en el documento.
+* Todo el texto en el html.
+* Versión  para móvil.
+* Pocas imágenes para que la carga sea rápida y consuma menos datos.
 
 Diseño para móviles:
 * La web se ve como una aplicación casi nativa en los móviles en vertical.
 
-Diseño para impresion:
+Diseño para impresión:
 * La web se puede imprimir o ver como si se fuese a imprimir.   archivo->vista preliminar
 
-Para mejorar SEO:
-* Un solo h1 en el documento.
-* todo el texto en el html
-* pocas imágenes para que la carga sea rápida.
-
-
 Para mejora de navegación:
-* title y h1 con texto similar.
-* etiquetas escalonadas.
-* uso de etiquetas semanticas.
+* Title y h1 con texto similar.
+* Etiquetas escalonadas.
+* Uso de etiquetas semánticas.
 
 
 Para mejorar la Accesibilidad:
 * Enlaces con title  para saber que  harán.
-* fotos con etiqueta alt descriptiva, favorece a los lectores de pantalla.
-* strong para poner énfasis negrita en vez de b.
-* menú siempre en la misma posición.
-* saltos facilitados por etiquetas a sin texto.
+* Fotos con etiqueta alt descriptiva, favorece a los lectores de pantalla.
+* Strong para poner énfasis negrita en vez de b.
+* Menú siempre en la misma posición.
+* Saltos facilitados por etiquetas para ciegos.
 * Imágenes y texto para los enlaces.
-* distancia mínima de contraste 3:1
+* Distancia mínima de contraste 3:1 enter fondos y 7:1 entre texto y fondo
 * ==>Se puede navegar completamente solo con tabulador e intro no necesita ratón
-* se pueden usar atajos de teclado con las letras subrayadas alt+shift+TECLA en firefox
+* Se pueden usar atajos de teclado con las letras subrayadas alt+shift+TECLA en firefox
 
 Adornitos:
-* icono favicon  para distinguirlo de otras pestañas.
-* el icono en las pestañas cambia si estas están desplegadas.
-* efecto shake  en el icono de premios de google.
-* efecto zoom  sobre las fotos de los miembros.
-* contracion de las las pestañas  bajo signo mas en modo movil (contribuciones).
+* Icono favicon  para distinguirlo de otras pestañas.
+* El icono en las pestañas cambia si estas están desplegadas.
+* Efecto shake  en el icono de premios de google.
+* Efecto zoom  sobre las fotos de los miembros.
+* Contracción de las las pestañas (bajo signo mas) en modo móvil (sección contribuciones).
 
 Cosas a seguir mejorando:
 * Implementar botón para navegación automática: Posibilidad de añadir archivo de audio para navegación narrada. 
 * Crear versión ligera de css y jss. (no implementada por claridad)
 * Descubrir como solucionar tema de etiquetas h1 o h2 antes de ul.(por normativa de w3c)
 * Como solo se los github de Gregorio y Baradona son los únicos que enlazan los demás apuntan a "#"
-* En caso de tenere logo poner logo estilo minimalista o flat.
-* Agregar algunos iconos minimalistas o de efecto negativo al background (no encontre diseños que me convenciesen)
+* En caso de tener logo poner logo estilo minimalista o flat.
+* Agregar algunos iconos minimalistas o de efecto negativo al background (no encontré diseños que me convenciesen)
+* Agregar vídeo sobre la asociación en la pantalla de presentación (conocemos) (no implementada por no existir vídeo de la asociación)
 
