@@ -23,17 +23,21 @@ Estilo minimalista:
 * Aplicados principios de  psicología del color en las secciones y juegos de contraste.
 * Contenidos centrados.
 
+
 Para mejorar SEO:
 * Un solo h1 en el documento.
 * Todo el texto en el html.
 * Versión  para móvil.
 * Pocas imágenes para que la carga sea rápida y consuma menos datos.
 
+
 Diseño para móviles:
 * La web se ve como una aplicación casi nativa en los móviles en vertical.
 
+
 Diseño para impresión:
 * La web se puede imprimir o ver como si se fuese a imprimir.   archivo->vista preliminar
+
 
 Para mejora de navegación:
 * Title y h1 con texto similar.
@@ -52,12 +56,14 @@ Para mejorar la Accesibilidad:
 * ==>Se puede navegar completamente solo con tabulador e intro no necesita ratón
 * Se pueden usar atajos de teclado con las letras subrayadas alt+shift+TECLA en firefox
 
+
 Adornitos:
 * Icono favicon  para distinguirlo de otras pestañas.
 * El icono en las pestañas cambia si estas están desplegadas.
 * Efecto shake  en el icono de premios de google.
 * Efecto zoom  sobre las fotos de los miembros.
 * Contracción de las las pestañas (bajo signo mas) en modo móvil (sección contribuciones).
+
 
 Cosas a seguir mejorando:
 * Implementar botón para navegación automática: Posibilidad de añadir archivo de audio para navegación narrada. 
