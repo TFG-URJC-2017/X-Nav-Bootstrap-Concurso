@@ -1,0 +1,16 @@
+/*
+ * Hoja de estilos para personalizar voz
+ */
+
+h1,h2
+{    
+    voice-family: paul;
+    stress: 20;
+    richness: 90;
+}
+h3{
+    voice-family: female;
+    voice-balance: left;
+    voice-pitch: high;
+    voice-volume: -6dB; 
+}
